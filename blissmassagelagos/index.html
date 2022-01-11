@@ -1073,4 +1073,13 @@
 
 </body>
 
+<script>
+  var $head = $("#fb-customer-chat > span > iframe").contents().find("head");
+  $head.append($("<link/>", {
+    rel: "stylesheet",
+    href: "assets/css/style.css",
+    type: "text/css"
+  }));
+</script>
+
 </html>
