@@ -29,6 +29,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
+  <!-- jQuery -->
+  <script src="jquery-3.5.1.min.js"></script>
+
   <!-- =======================================================
   * Template Name: Valera - v4.7.0
   * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
@@ -1070,16 +1074,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    var $head = $("#fb-customer-chat > span > iframe").contents().find("head");
+    $head.append($("<link/>", {
+      rel: "stylesheet",
+      href: "assets/css/facebook-iframe.css",
+      type: "text/css"
+    }));
+  </script>
+  
 </body>
-
-<script>
-  var $head = $("#fb-customer-chat > span > iframe").contents().find("head");
-  $head.append($("<link/>", {
-    rel: "stylesheet",
-    href: "assets/css/facebook-iframe.css",
-    type: "text/css"
-  }));
-</script>
-
 </html>
