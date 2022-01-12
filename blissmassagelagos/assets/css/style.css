@@ -1443,6 +1443,10 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+.faq .faq-list p {
+  padding: 10px 0 0 32px;
+}
+
 a.inline-send-msg.btn-buy {
   display: inline !important;
   padding: 0 !important;
