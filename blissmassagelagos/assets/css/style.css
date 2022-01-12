@@ -1443,7 +1443,7 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
-.inline-send-msg {
+a.inline-send-msg.btn-buy {
   display: inline !important;
   padding: 0 !important;
 }
