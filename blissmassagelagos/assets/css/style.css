@@ -1443,9 +1443,9 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
-.faq-list > ul > li > div > p > a {
-  display: inline;
-  padding: 0;
+.inline-send-msg {
+  display: inline !important;
+  padding: 0 !important;
 }
 
 #footer {
