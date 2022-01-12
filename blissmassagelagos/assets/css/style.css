@@ -1443,6 +1443,11 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+.faq-list > ul > li > div > p > a {
+  display: inline;
+  padding: 0;
+}
+
 #footer {
   background: url("../img/footer-bg.jpg") center center no-repeat;
 }
