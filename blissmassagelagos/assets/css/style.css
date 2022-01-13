@@ -1443,6 +1443,19 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+.testimonials .testimonial-item h3 {
+  margin: 10px auto 0px auto;
+  text-align: center;
+}
+.testimonials .testimonial-item p {
+  padding: 20px 20px 10px 20px;
+  text-align: center;
+}
+
+#about > div > div.section-title > img {
+  max-width: 300px;
+  border-radius: 50%;
+}
 
 #hero > div > img {
   max-width: 350px;
