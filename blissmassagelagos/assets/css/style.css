@@ -1444,6 +1444,9 @@ section {
 # Custom CSS Edits
 --------------------------------------------------------------*/
 
+#hero > div > img {
+  max-width: 350px;
+}
 .hero-container img {
   max-width: 285px;
 }
