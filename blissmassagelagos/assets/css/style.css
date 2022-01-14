@@ -1443,6 +1443,62 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+.faq .faq-list .icon-help, .faq .faq-list a.collapsed:hover,a:hover {
+  color: #981b28;
+}
+
+#footer .footer-top .social-links a:hover,#footer .footer-top .footer-newsletter form input[type=submit],#footer .footer-top .footer-newsletter form input[type=submit]:hover, .cta .cta-btn:hover,#hero .btn-get-started:hover {
+  background: #981b28;
+}
+
+
+#navbar > ul > li:nth-child(7) {
+  border: 8px white;
+  background: #981b28;
+  border-radius: 16px;
+}
+#logo-footer {
+  max-width: 250px;
+}
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+  color:  #b45351;
+}
+.cta {
+  background: #b45351;
+}
+#header,#header.fixed-top, #header.header-inner-pages {
+  background: rgba(174, 81, 79, 0.89);
+}
+#hero:before {
+  background: rgb(21 5 23 / 9%) linear-gradient(rgb(26 0 33 / 60%) 0%, rgb(26 0 33 / 57%) 5%, rgb(38 6 51 / 8%) 40%, rgb(147 47 69 / 44%) 76%, rgb(236 97 93 / 79%) 94%, rgb(236 97 93) 100%) repeat scroll 0% 0%;
+}
+#footer .footer-top .social-links {
+  margin-top: 30px;
+  zoom: 1.8;
+}
+#footer .credits, #footer .copyright {
+  float: none;
+  text-align: center;
+}
+#footer .footer-bottom {
+  border-top: 3px solid #ff7f5d;
+  max-width: 700px;
+}
+#footer .social-links svg.iconify.iconify--mdi {
+  margin-top: -6px;
+}
+#footer .social-links > a:nth-child(3) {
+  padding: 9px;
+}
+
+#services .box h5 {
+  font-weight: 600;
+}
+
+#services .box p {
+  margin-bottom: 40px;
+}
+
 .testimonials .testimonial-item h3 {
   margin: 10px auto 0px auto;
   text-align: center;
@@ -1457,9 +1513,6 @@ section {
   border-radius: 50%;
 }
 
-#hero > div > img {
-  max-width: 350px;
-}
 .hero-container img {
   max-width: 285px;
 }
@@ -1478,7 +1531,8 @@ a.inline-send-msg.btn-buy {
 }
 
 #footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+  background: url("../img/footer-bg.jpg") bottom center no-repeat;
+  background-size: cover;
 }
 #hero {
   background: url("../img/cover.jpg") top center;
@@ -1519,3 +1573,8 @@ a.inline-send-msg.btn-buy {
 }
 
 #about > div > div.row.content > div > div > h6:nth-child(3) {padding-top: 20px;}
+
+.back-to-top.active {
+display: none;
+visibility: hidden;
+}
