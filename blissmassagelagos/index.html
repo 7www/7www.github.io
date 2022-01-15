@@ -29,7 +29,6 @@
   <!-- CSS - Main -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
   <!-- CSS - Facebook Iframe -->
   <link href="assets/css/facebook-iframe.css" rel="stylesheet">
 
@@ -38,7 +37,6 @@
 
   <!-- Iconify -->
   <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
-
 
   <!-- =======================================================
   * Template Name: Valera - v4.7.0
@@ -84,9 +82,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <img id="logo-header" src="assets/img/logo_transparent.png" alt="Transparent Logo by Bliss Massage Lagos">
-      <h1>Bliss Massage Lagos</h1>
-      <h2>Certified massage therapist in Lagos Portugal</h2>
+      <img id="logo-header" src="" alt="Transparent Logo by Bliss Massage Lagos">
+      <h1 id="h1-header"></h1>
+      <h2 id="h2-header"></h2>
       <a href="#about" class="btn-get-started scrollto">About me</a>
     </div>
   </section><!-- End Hero -->
@@ -95,27 +93,27 @@
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Bliss</a></h1>
+      <h1 class="logo me-auto me-lg-0"><a id="a-header" href="index.html"></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Massages</a></li>
-          <li><a class="nav-link scrollto" href="#reviews">Reviews</a></li>          
-          <li><a class="nav-link scrollto " href="#photos">Photos</a></li>
-          <li><a class="nav-link scrollto " href="#questions">Questions?</a></li>
+          <li><a id="navbar-a1" class="nav-link scrollto active" href="#hero"></a></li>
+          <li><a id="navbar-a2" class="nav-link scrollto" href="#about"></a></li>
+          <li><a id="navbar-a3" class="nav-link scrollto" href="#services"></a></li>
+          <li><a id="navbar-a4" class="nav-link scrollto" href="#reviews"></a></li>          
+          <li><a id="navbar-a5" class="nav-link scrollto " href="#photos"></a></li>
+          <li><a id="navbar-a6" class="nav-link scrollto " href="#questions">?</a></li>
           <li><a class="nav-link scrollto" onclick="FB.CustomerChat.showDialog();">Send Message</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="header-social-links d-flex align-items-center">
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="iconify"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
+        <a id="header-social-links-a1" href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a id="header-social-links-a2" href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a id="header-social-links-a3" href="#" class="iconify"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
     </div>
 
     </div>
@@ -129,12 +127,12 @@
 
         <div class="section-title">
           <h2>About me</h2>
-          <img src="https://scontent.flis5-4.fna.fbcdn.net/v/t39.30808-6/244588655_4662928077071861_3614623352260570325_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_eui2=AeHz-MWmEwvRKGydMrs1enKL7Vk8sXzbzqLtWTyxfNvOonpTUrlI_u6EmoxapBTnVM7vEi_uUbgERhXhWOiVs5Qp&_nc_ohc=O-bKW03Xut0AX8M1moY&_nc_ht=scontent.flis5-4.fna&oh=00_AT8B3cUmlY-aCxqjXigmA3jnABY0h8D1pGPoxslNIPRqlg&oe=61E4E29B" alt="Image of Bliss at the massage salon in Lagos">
+          <img id="about-img" src="" alt="Image of Bliss at the massage salon in Lagos">
         </div>
 
         <div class="row content">
           <div class="col-lg">
-            <p>
+            <p id="about-content">
               Here we can write a breif description about your business and service and explain a little about yourself.
             </p>
           </div>
@@ -149,8 +147,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Massages</h2>
-          <p>If there is a massage you would like to request that is not listed then <a class="inline-send-msg" onclick="FB.CustomerChat.showDialog();">send me a message</a>.</p>
+          <h2 id="services-title"></h2>
+          <p id="services-description"><a class="inline-send-msg" onclick="FB.CustomerChat.showDialog();">send me a message</a>.</p>
         </div>
 
         <div class="row">
@@ -261,16 +259,11 @@
 
         <div class="section-title">
           <h2>Photos</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>My photo gallery</p>
         </div>
 
         <ul id="portfolio-flters" class="d-flex justify-content-center">
           <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
         </ul>
 
         <div class="row portfolio-container">
@@ -391,55 +384,51 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
-                data-bs-target="#faq-list-1">Where is the massage done? <i
+              <i class="bx bx-help-circle icon-help"></i> <a id="faq-question1" data-bs-toggle="collapse" class="collapse"
+                data-bs-target="#faq-list-1"> <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  I work in a salon space in Lagos (Praia da Luz) called The Holistic Hub. 
+                <p id="faq-answer1"> 
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2"
-                class="collapsed">How much does a massage cost? <i
+              <i class="bx bx-help-circle icon-help"></i> <a id="faq-question2" data-bs-toggle="collapse" data-bs-target="#faq-list-2"
+                class="collapsed"> <i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  I offer different massage services to each need. If you have any doubts then <a class="inline-send-msg btn-buy" onclick="FB.CustomerChat.showDialog();">send me a message.</a>
+                <p id="faq-answer2">
+                  <a class="inline-send-msg btn-buy" onclick="FB.CustomerChat.showDialog();">send me a message.</a>
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3"
-                class="collapsed">Do you have any special offers for massages? <i
+              <i class="bx bx-help-circle icon-help"></i> <a id="faq-question3" data-bs-toggle="collapse" data-bs-target="#faq-list-3"
+                class="collapsed"><i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  I regularly update my latest offers so <a class="inline-send-msg btn-buy" onclick="FB.CustomerChat.showDialog();">send me a message</a> for more information about my latest offer.
+                <p id="faq-answer3">
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4"
-                class="collapsed">Do you have any COVID19 rules? <i
+              <i class="bx bx-help-circle icon-help"></i> <a id="faq-question4" data-bs-toggle="collapse" data-bs-target="#faq-list-4"
+                class="collapsed"><i
                   class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  The salon is deeply cleaned before all massage therapy is done. I work using a mask at all times and ask that you also wear a mask too at all times for safety.                  
+                <p id="faq-answer4">      
                 </p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5"
-                class="collapsed">Is this massage therapy Female or Male only? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a id="faq-question5" data-bs-toggle="collapse" data-bs-target="#faq-list-5"
+                class="collapsed"><i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  I work with both men and women to each of their needs.
+                <p id="faq-answer5">
                 </p>
               </div>
             </li>
@@ -456,11 +445,8 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <p>My contact information</p>
         </div>
-
         <div>
           <iframe style="border:0; width: 100%; height: 270px;"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24736.616663559085!2d-8.718890285483898!3d37.088885561261264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b304950234d8d%3A0x5410aaa3471afc57!2sLagos!5e0!3m2!1sen!2spt!4v1642100737759!5m2!1sen!2spt"
@@ -537,8 +523,8 @@
         <div class="row  justify-content-center">
           <div class="col-lg-6">
             <img id="logo-footer" src="assets/img/logo_transparent.png" alt="Transparent Logo by Bliss Massage Lagos">
-            <h3>Bliss Massage Lagos</h3>
-            <p>Subscribe to my mailing list to receive special offers on your next massage.</p>
+            <h3 id="h3-footer">Bliss Massage Lagos</h3>
+            <p>Subscribe to my mailing list to receive special offers on your next <span id="p-footer">massage.</span></p>
           </div>
         </div>
 
@@ -551,9 +537,9 @@
         </div>
 
         <div class="social-links">
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
+          <a id="footer-social-links-a1" href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a id="footer-social-links-a2" href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a id="footer-social-links-a3" href="#"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
         </div>
 
       </div>
@@ -561,7 +547,7 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Bliss Massage Lagos</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span id="span-copyright">Bliss Massage Lagos</span></strong>. All Rights Reserved
       </div>
       <div class="credits" style="font-size: 20px;">
         <!-- All the links in the footer should remain intact. -->
@@ -587,6 +573,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  
+
+  <!-- Index JS File to Pull Index JSON -->
+  <script src="index.js"></script>
+
 </body>
 </html>

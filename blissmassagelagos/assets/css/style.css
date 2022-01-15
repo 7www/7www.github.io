@@ -1455,7 +1455,7 @@ section {
 #navbar > ul > li:nth-child(7) {
   border: 8px white;
   background: #981b28;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 #logo-footer {
   max-width: 250px;
