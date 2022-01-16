@@ -38,6 +38,7 @@
   <!-- Iconify -->
   <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
 
+
   <!-- =======================================================
   * Template Name: Valera - v4.7.0
   * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
@@ -47,6 +48,11 @@
 </head>
 
 <body>
+  <!-- Preloader -->  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
   <!-- Messenger Chat plugin Code -->
   <div id="fb-root"></div>
 
@@ -82,7 +88,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <img id="logo-header" src="" alt="Transparent Logo by Bliss Massage Lagos">
+      <img id="logo-header" alt="Transparent Logo by Bliss Massage Lagos">
       <h1 id="h1-header"></h1>
       <h2 id="h2-header"></h2>
       <a href="#about" class="btn-get-started scrollto">About me</a>
@@ -104,30 +110,29 @@
           <li><a id="navbar-a3" class="nav-link scrollto" href="#services"></a></li>
           <li><a id="navbar-a4" class="nav-link scrollto" href="#reviews"></a></li>          
           <li><a id="navbar-a5" class="nav-link scrollto " href="#photos"></a></li>
-          <li><a id="navbar-a6" class="nav-link scrollto " href="#questions">?</a></li>
+          <li><a id="navbar-a6" class="nav-link scrollto " href="#questions"></a></li>
           <li><a class="nav-link scrollto" onclick="FB.CustomerChat.showDialog();">Send Message</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <div class="header-social-links d-flex align-items-center">
-        <a id="header-social-links-a1" href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a id="header-social-links-a2" href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a id="header-social-links-a3" href="#" class="iconify"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
+        <a id="header-social-links-a1" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a id="header-social-links-a2" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a id="header-social-links-a3" class="iconify"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
     </div>
 
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
         <div class="section-title">
           <h2>About me</h2>
-          <img id="about-img" src="" alt="Image of Bliss at the massage salon in Lagos">
+          <img id="about-img" alt="Image of Bliss at the massage salon in Lagos">
         </div>
 
         <div class="row content">
@@ -172,7 +177,7 @@
 
         <div class="section-title">
           <h2>Reviews</h2>
-          <p>See what other people have to say</p>
+          <p>See what other people say</p>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -522,7 +527,7 @@
 
         <div class="row  justify-content-center">
           <div class="col-lg-6">
-            <img id="logo-footer" src="assets/img/logo_transparent.png" alt="Transparent Logo by Bliss Massage Lagos">
+            <img id="logo-footer" alt="Transparent Logo by Bliss Massage Lagos">
             <h3 id="h3-footer">Bliss Massage Lagos</h3>
             <p>Subscribe to my mailing list to receive special offers on your next <span id="p-footer">massage.</span></p>
           </div>
@@ -537,9 +542,9 @@
         </div>
 
         <div class="social-links">
-          <a id="footer-social-links-a1" href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a id="footer-social-links-a2" href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a id="footer-social-links-a3" href="#"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
+          <a id="footer-social-links-a1" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a id="footer-social-links-a2" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a id="footer-social-links-a3"><span class="iconify" data-icon="mdi:google-my-business"></span></a>
         </div>
 
       </div>
@@ -558,10 +563,6 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
