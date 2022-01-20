@@ -53,38 +53,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "108205691752037");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v12.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
@@ -138,7 +106,6 @@
         <div class="row content">
           <div class="col-lg">
             <p id="about-content">
-              Here we can write a breif description about your business and service and explain a little about yourself.
             </p>
           </div>
         </div>
@@ -159,15 +126,63 @@
         <div class="row">
           <div class="col-lg-12 col-md-6 mt-4 mt-lg-0">
             <div class="box">  
-              <h5>Massage1 - 20 minutes </h5> <p>##.##€</p> 
-              <h5>Massage2 - 30 minutes </h5> <p>##.##€</p>
-              <h5>Massage3 - 40 minutes </h5> <p>##.##€</p>
-              <h5>Massage4 - 50 minutes </h5> <p>##.##€</p>
-              <h5>Massage5 - 1 hour </h5> <p>##.##€</p>
+              <h5>Full body relax</h5>
+              <h6>60 minutes</h6>
+              <table class="table-price-list">
+                <tr>
+                  <td><p>Summer</p></td>
+                  <td><p>Winter</p></td>
+                </tr>
+                <tr>
+                  <td><p>60.00€</p></td>
+                  <td><p>40.00€</p></td>
+                </tr>  
+              </table>
+
+              <h5>Full body relax</h5>
+              <h6>90 minutes</h6>
+              <table class="table-price-list">
+                <tr>
+                  <td><p>Summer</p></td>
+                  <td><p>Winter</p></td>
+                </tr>
+                <tr>
+                  <td><p>80.00€</p></td>
+                  <td><p>65.00€</p></td>
+                </tr>  
+              </table>
+              
+              <h5>Back , shoulder & neck massage</h5>
+              <h6>45 minutes</h6>
+              <table class="table-price-list">
+                <tr>
+                  <td><p>Summer</p></td>
+                  <td><p>Winter</p></td>
+                </tr>
+                <tr>
+                  <td><p>35.00€</p></td>
+                  <td><p>25.00€</p></td>
+                </tr>  
+              </table>
+              
+              <h5>Deep tissue</h5>
+              <h6>60 minutes</h6>
+              <table class="table-price-list">
+                <tr>
+                  <td><p>Summer</p></td>
+                  <td><p>Winter</p></td>
+                </tr>
+                <tr>
+                  <td><p>65.00€</p></td>
+                  <td><p>50.00€</p></td>
+                </tr>  
+              </table>
+              <p id="price-list-description">Summer prices are April to November and Winter prices are November to April. For all other massage enquiries then <a class="inline-send-msg" onclick="FB.CustomerChat.showDialog();">send me a message</a> or <a class="inline-send-msg" href ="tel:+351961531394">call me.</a></p>
             </div>
           </div>
-        </div>
 
+
+        </div>
       </div>
     </section><!-- End Pricing Section -->
 
@@ -198,10 +213,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Lovely relaxing place. Great massage. Very friendly environment                
+                  I had a deep tissue massage and would highly recommend this lovely place. Was very professional, friendly and made me feel comfortable.             
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Abigail Long</h3>
+                <h3>Natasha Caetano</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -209,10 +224,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Lovely relaxing place. Great massage. Very friendly environment                
+                  The best massage around! Definately needed after heavy surfing!              
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Abigail Long</h3>
+                <h3>Tribal Sound</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -220,10 +235,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Lovely relaxing place. Great massage. Very friendly environment                
+                  Love this place, and I highly recommend you check it out!              
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Abigail Long</h3>
+                <h3>Ellis Reichgelt</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -231,10 +246,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Lovely relaxing place. Great massage. Very friendly environment                
+                  It was a great experience, very relaxing and a really fantastic service excellent and professional.              
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <h3>Abigail Long</h3>
+                <h3>Filipe Cardoso</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -274,106 +289,46 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/1.jpg" class="img-fluid" alt="Relaxing Massage Bed"></div>
             <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <h4>Relaxing Massage Bed</h4>
+              <a href="assets/img/portfolio/1.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Relaxing Massage Bed"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/2.jpg" class="img-fluid" alt="Buddhas and Ambience"></div>
             <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Buddhas and Ambience</h4>
+              <a href="assets/img/portfolio/2.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Buddhas and Ambience"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/3.jpg" class="img-fluid" alt="Buddhas"></div>
             <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <h4>Buddhas</h4>
+              <a href="assets/img/portfolio/3.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Buddhas"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-img"><img src="assets/img/portfolio/5.jpg" class="img-fluid" alt="Massage Bed and Ambience"></div>
             <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <h4>Massage Bed and Ambience</h4>
+              <a href="assets/img/portfolio/5.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title="Massage Bed and Ambience"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
         </div>
-
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -452,65 +407,40 @@
           <h2>Contact</h2>
           <p>My contact information</p>
         </div>
-        <div>
-          <iframe style="border:0; width: 100%; height: 270px;"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24736.616663559085!2d-8.718890285483898!3d37.088885561261264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b304950234d8d%3A0x5410aaa3471afc57!2sLagos!5e0!3m2!1sen!2spt!4v1642100737759!5m2!1sen!2spt"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
 
-        <div class="row mt-5">
+        <div class="row mt-5" style="margin-top:0px!important">
 
-          <div class="col-lg-4">
+          <div class="col-lg">
             <div class="info">
               <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Address</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h4>Salon Address</h4>
+                <p>The Holistic Hub, Rua 25 da Abril, Praia da Luz, Lagos. </p>
               </div>
 
               <div class="email">
-                <i class="bi bi-envelope"></i>
                 <h4>Email</h4>
                 <p>info@example.com</p>
               </div>
 
               <div class="phone">
-                <i class="bi bi-phone"></i>
+                <h4>Messenger</h4>
+                <p><a class="inline-send-msg" onclick="FB.CustomerChat.showDialog();">Send Message</a></p>
+              </div>
+
+              <div class="phone">
                 <h4>Call</h4>
-                <p>+1 5589 55488 55s</p>
+                <p><a href ="tel:+351961531394">+351 961 531 394</a></p>
               </div>
 
             </div>
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
+        </div>
+        <div style="margin-top: 50px">
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24736.616663559085!2d-8.718890285483898!3d37.088885561261264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1b304950234d8d%3A0x5410aaa3471afc57!2sLagos!5e0!3m2!1sen!2spt!4v1642100737759!5m2!1sen!2spt"
+            frameborder="0" allowfullscreen></iframe>
         </div>
 
       </div>
@@ -563,6 +493,43 @@
       </div>
     </div>
   </footer><!-- End Footer -->
+
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "108205691752037");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v12.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <!-- Call Now Button -->
+  <a class="call-now-button" href="tel:+351961531394">
+    <span class="call-now-button-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
+    <span class="call-now-button-text"><span>961531394</span></span>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>

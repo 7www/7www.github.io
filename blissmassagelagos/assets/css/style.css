@@ -1443,6 +1443,62 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+.contact .info h4 {
+  text-align: left;
+}
+.contact .info {
+  text-align: center;
+}
+.contact .info h4,.contact .info p{
+  padding: 0px;
+}
+
+.inline-send-msg {
+  display: inline-block!important;
+  padding: 0px !important;
+}
+#price-list-description {
+  margin-top: 50px!important;
+  max-width: 580px;
+  text-align: center;
+  margin: auto;
+}
+#services > div > div.row > div > div > table > tbody > tr:nth-child(1) {
+  font-weight: 600;
+}
+#services > div > div.row > div > div > h6 {
+  font-weight: 400;
+}
+
+table.table-price-list p{
+  margin: 5px!important;
+}
+
+table.table-price-list {
+  text-align: center;
+  margin: auto;
+}
+
+table.table-price-list td {
+  min-width: 100px;
+}
+
+.section-title p {
+  color: #606060;
+}
+.contact .info .email, .contact .info .phone, .contact .info .address {
+  margin-top: 25px;
+  display: inline-block;
+  width: auto;
+  padding: 0 10px 0 10px;
+}
+
+#about-content {
+  max-width: 580px;
+  text-align: center;
+  margin: auto;
+}
+
 .faq .faq-list .icon-help, .faq .faq-list a.collapsed:hover,a:hover {
   color: #981b28;
 }
@@ -1493,6 +1549,7 @@ section {
 
 #services .box h5 {
   font-weight: 600;
+  margin-top: 40px;
 }
 
 #services .box p {
@@ -1500,7 +1557,7 @@ section {
 }
 
 .testimonials .testimonial-item h3 {
-  margin: 10px auto 0px auto;
+  margin: 30px auto 0px auto;
   text-align: center;
 }
 .testimonials .testimonial-item p {
@@ -1577,4 +1634,43 @@ a.inline-send-msg.btn-buy {
 .back-to-top.active {
 display: none;
 visibility: hidden;
+}
+.call-now-button {
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 22px;
+	border-radius: 50px;
+	border: 0px #2bff00 solid;
+	background-color:#0cc014;
+	text-shadow: 1px 1px 1px #528ecc;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+  position: fixed;
+    bottom: 6px;
+    left: 3px;
+    z-index: 999;
+}
+.call-now-button:hover {
+  background-color: #03960a;
+  color: white;
+}
+.call-now-button-icon {
+	padding: 11px 13px;
+	text-shadow: none;
+}
+.call-now-button-icon i {
+	position: relative;
+	left: 6px;
+}
+.call-now-button-text {
+	padding: 11px 14px;
+}
+.call-now-button-text span{
+  display: block;
+  position: relative;
+  left: -6px;
+  font-weight: 700;
+  font-family: inherit;
+  text-shadow: none;
 }
