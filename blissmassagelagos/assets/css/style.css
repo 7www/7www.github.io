@@ -1647,21 +1647,21 @@ visibility: hidden;
 	display: inline-flex;
 	align-items: center;
   position: fixed;
-    bottom: 6px;
-    left: 3px;
-    z-index: 999;
+  bottom: 94px;
+  right: 23px;
+  z-index: 999;
 }
 .call-now-button:hover {
   background-color: #03960a;
   color: white;
 }
 .call-now-button-icon {
-	padding: 11px 13px;
-	text-shadow: none;
+  padding: 9px 17px;
+  text-shadow: none;
+  font-size: 28px;
 }
 .call-now-button-icon i {
 	position: relative;
-	left: 6px;
 }
 .call-now-button-text {
 	padding: 11px 14px;
