@@ -1641,7 +1641,7 @@ visibility: hidden;
 	font-size: 22px;
 	border-radius: 50px;
 	border: 0px #2bff00 solid;
-	background-color:#0cc014;
+	background-color:#981b28;
 	text-shadow: 1px 1px 1px #528ecc;
 	cursor: pointer;
 	display: inline-flex;
@@ -1652,7 +1652,7 @@ visibility: hidden;
   z-index: 999;
 }
 .call-now-button:hover {
-  background-color: #03960a;
+  background-color: #6e1019;
   color: white;
 }
 .call-now-button-icon {
