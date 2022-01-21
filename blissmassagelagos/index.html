@@ -53,37 +53,6 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Messenger Chat plugin Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Chat plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "108205691752037");
-    chatbox.setAttribute("attribution", "biz_inbox");
-  </script>
-
-  <!-- Your SDK code -->
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v12.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
   <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
@@ -325,7 +294,6 @@
               <h4>Relaxing Massage Bed</h4>
               <a href="assets/img/portfolio/1.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Relaxing Massage Bed"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -335,7 +303,6 @@
               <h4>Buddhas and Ambience</h4>
               <a href="assets/img/portfolio/2.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Buddhas and Ambience"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -345,7 +312,6 @@
               <h4>Buddhas</h4>
               <a href="assets/img/portfolio/3.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Buddhas"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -355,7 +321,6 @@
               <h4>Massage Bed and Ambience</h4>
               <a href="assets/img/portfolio/5.jpg" data-gallery="portfolioGallery"
                 class="portfolio-lightbox preview-link" title="Massage Bed and Ambience"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -529,6 +494,37 @@
   <a class="call-now-button" href="tel:+351961531394">
     <span class="call-now-button-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
   </a>
+  
+  <!-- Messenger Chat plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "108205691752037");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v12.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_GB/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter.js"></script>
