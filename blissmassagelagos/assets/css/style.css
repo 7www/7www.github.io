@@ -1448,9 +1448,12 @@ section {
 }
 .contact .info {
   text-align: center;
+  max-width: 500px;
+  margin: auto;
 }
 .contact .info h4,.contact .info p{
   padding: 0px;
+  text-align: center;
 }
 
 .inline-send-msg {
@@ -1513,7 +1516,7 @@ table.table-price-list td {
   background: #981b28;
   border-radius: 8px;
 }
-#logo-footer {
+#footer-logo {
   max-width: 250px;
 }
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
