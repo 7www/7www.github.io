@@ -1443,6 +1443,10 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+#footer .footer-bottom {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
 .contact .info h4 {
   text-align: left;
 }
@@ -1540,7 +1544,7 @@ table.table-price-list td {
   text-align: center;
 }
 #footer .footer-bottom {
-  border-top: 3px solid #ff7f5d;
+  border-top: 0px solid #ff7f5d;
   max-width: 700px;
 }
 #footer .social-links svg.iconify.iconify--mdi {
@@ -1591,11 +1595,11 @@ a.inline-send-msg.btn-buy {
 }
 
 #footer {
-  background: url("../img/footer-bg.jpg") bottom center no-repeat;
+  background: url("../img/footer-bg.jpg") bottom left no-repeat;
   background-size: cover;
 }
 #hero {
-  background: url("../img/cover.jpg") top center;
+  background: url("../img/cover.jpg") top center no-repeat;
 }
 
 .pricing h3 {
