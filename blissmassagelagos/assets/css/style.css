@@ -1443,6 +1443,18 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+#language-selector {
+  font-size: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#language-selector option {
+  color: black;
+}
+
 #footer .footer-bottom {
   padding-top: 70px;
   padding-bottom: 100px;
