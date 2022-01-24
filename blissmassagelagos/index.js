@@ -2,7 +2,8 @@ let request = new XMLHttpRequest();
 request.open("GET","index.json", false);
 request.send(null);
 document.getElementById("language-selector").addEventListener("change", loadlanguage);
-loadlanguage()
+loadlanguage();
+loadcolours();
 function loadlanguage() {
     let jsonfile = JSON.parse(request.responseText);
     jsonfile = jsonfile[document.getElementById("language-selector").value.substring(0,2)]
@@ -28,4 +29,11 @@ function loadlanguage() {
             }    
         }
     }    
+}
+function loadcolours() {
+    for (let stylesheet of document.styleSheets) {
+        if (String(stylesheet.href).slice(-9) == "style.css") {
+            console.log(String(stylesheet.href).slice(-9));
+        }
+    }
 }

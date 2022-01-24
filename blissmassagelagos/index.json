@@ -1,4 +1,10 @@
 {
+    "colours": {
+        "#981b28": "black",
+        "#ff7f5d": "yellow",
+        "#b45351": "red",
+        "#ff9f86": "orange"        
+    },
     "en": {
         "logo-header": "assets/img/logo_transparent.png",
         "h1-header": "Bliss Massage Lagos",
@@ -17,7 +23,7 @@
         "header-social-links-a3": "https://g.page/r/CXlKa_KmLprfEBA",
         "about-h2": "About me",
         "about-img": "assets/img/about-me-photo.jpg",
-        "about-content": "Hello, I am Tania and welcome to Bliss Massage. I am a certified English massage therapist for 25 years based in Lagos Portugal. I am bi-lingual speaking both English and Portuguese. If you need any help or have any questions then please <a class=\"inline-send-msg\" onclick=\"FB.CustomerChat.showDialog();\">send me a message</a> or <a href =\"tel:+351961531394\">call me</a>.",
+        "about-content": "Hello, I am Tania and welcome to Bliss Massage. I am a certified English massage therapist for 25 years based in Lagos Portugal. I am bi-lingual speaking both English and Portuguese. If you need any help or have any questions then please <a class=\"inline-send-msg\" onclick=\"FB.CustomerChat.showDialog();\">send me a message</a> or <a class=\"inline-send-msg\" href =\"tel:+351961531394\">call me</a>.",
         "services-title": "Massages",
         "services-description": "Here are my massage therapies and prices.",
         "price-list-description": "Summer prices are April to November and Winter prices are November to April. For all other massage enquiries then <a class=\"inline-send-msg\" onclick=\"FB.CustomerChat.showDialog();\">send me a message</a> or <a class=\"inline-send-msg\" href =\"tel:+351961531394\">call me.</a>",
@@ -45,7 +51,7 @@
         "contact-address-h4": "Salon Address",
         "contact-address-description": "The Holistic Hub, Rua 25 da Abril, Praia da Luz, Lagos. ",
         "contact-email-h4": "Email",
-        "contact-email-description": "info@example.com",
+        "contact-email-description": "tluz1972@hotmail.co.uk",
         "contact-messenger-h4": "Messenger",
         "contact-messenger-description": "Send Message",
         "contact-telephone-h4": "Telephone",
@@ -77,7 +83,7 @@
         "header-social-links-a3": "https://g.page/r/CXlKa_KmLprfEBA",
         "about-h2": "Sobre eu",
         "about-img": "assets/img/about-me-photo.jpg",
-        "about-content": "Olá, sou a Tania e bem-vindo à Bliss Massage. Sou massagista inglesa certificada há 25 anos, sediada em Lagos Portugal. Sou bilingue, falo inglês e português. Se precisar de ajuda ou tiver alguma dúvida, por favor <a class=\"inline-send-msg\" onclick=\"FB.CustomerChat.showDialog();\">envie-me uma mensagem</a> ou <a href =\"tel:+351961531394\">ligue-me</a>.",
+        "about-content": "Olá, sou a Tania e bem-vindo à Bliss Massage. Sou massagista inglesa certificada há 25 anos, sediada em Lagos Portugal. Sou bilingue, falo inglês e português. Se precisar de ajuda ou tiver alguma dúvida, por favor <a class=\"inline-send-msg\" onclick=\"FB.CustomerChat.showDialog();\">envie-me uma mensagem</a> ou <a class=\"inline-send-msg\" href =\"tel:+351961531394\">ligue-me</a>.",
         "services-title": "Massagens",
         "services-description": "Aqui estão as minhas terapias de massagem e preços.",
         "price-list-description": "Os preços de verão são Abril a Novembro e os preços de inverno são Novembro a Abril. Para todos os outros inquéritos de massagem <a class=\"inline-send-msg\" onclick=\"FB.CustomerChat.showDialog();\">envie-me uma mensagem</a> ou <a class=\"inline-send-msg\" href =\"tel:+351961531394\">me ligue.</a>",
@@ -105,7 +111,7 @@
         "contact-address-h4": "Morada do Salão",
         "contact-address-description": "The Holistic Hub, Rua 25 da Abril, Praia da Luz, Lagos. ",
         "contact-email-h4": "Email",
-        "contact-email-description": "info@example.com",
+        "contact-email-description": "tluz1972@hotmail.co.uk",
         "contact-messenger-h4": "Messenger",
         "contact-messenger-description": "Envie uma mensagem",
         "contact-telephone-h4": "Telefone",
