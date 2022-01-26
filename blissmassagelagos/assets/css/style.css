@@ -1394,6 +1394,13 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+#navbar > ul > li:nth-child(7) {
+  max-width: fit-content;
+}
+.navbar-mobile > ul > li {
+  display: table;
+  margin: auto;
+}
 #footer > div.container.footer-bottom.clearfix > div.credits > div > span {
   display: inline;
   margin: 0px 0 0 4px;
@@ -1661,7 +1668,12 @@ visibility: hidden;
   --color5: #ff9f86;
 }
 
-
+#navbar-a7 {
+  color: white;
+}
+.navbar-mobile a:hover, .navbar-mobile li:hover > a {
+  color: black;
+}
 #footer .footer-top .social-links a:hover,#footer .footer-top .footer-newsletter form input[type=submit],.contact .php-email-form button[type=submit],.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i ,.pricing .advanced,.pricing .featured h3,.pricing .btn-buy,.team .member .social a:hover,.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active,.cta .cta-btn:hover,.testimonials .swiper-pagination .swiper-pagination-bullet-active,.our-values .card:hover .card-body,.about .content .btn-learn-more:hover,.section-title h2::after,#hero .btn-get-started:hover,.navbar > ul > li > a:before,.back-to-top{
     background-color: var(--color1);
     background: var(--color1);
@@ -1675,7 +1687,27 @@ visibility: hidden;
   .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
     border-color: var(--color1);
   }
-  .contact .info i,.faq .faq-list a.collapsed:hover,.pricing ul i,.pricing h4,.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover,.portfolio #portfolio-flters li.filter-active::before, .portfolio #portfolio-flters li.filter-active::after,.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active,.services .icon-box:hover .title a,.counts .counters span,.about .content .btn-learn-more,.about .content ul i,.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a ,.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a,.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a , a {
+  .contact .info i,
+  .faq .faq-list a.collapsed:hover,
+  .pricing ul i,
+  .pricing h4,
+  .portfolio .portfolio-item .portfolio-info .preview-link:hover, 
+  .portfolio .portfolio-item .portfolio-info .details-link:hover,
+  .portfolio #portfolio-flters li.filter-active::before, 
+  .portfolio #portfolio-flters li.filter-active::after,
+  .portfolio #portfolio-flters li:hover, 
+  .portfolio #portfolio-flters li.filter-active,
+  .services .icon-box:hover .title a,
+  .counts .counters span,.about .content .btn-learn-more,
+  .about .content ul i,
+  .navbar-mobile .dropdown ul a:hover, 
+  .navbar-mobile .dropdown ul .active:hover, 
+  .navbar-mobile .dropdown ul li:hover > a , 
+  .navbar-mobile .active, 
+  .navbar .dropdown ul a:hover, 
+  .navbar .dropdown ul .active:hover, 
+  .navbar .dropdown ul li:hover > a , 
+  a {
     color: var(--color2);
   }
   .faq .faq-list .icon-help, .faq .faq-list a.collapsed:hover,a:hover {
@@ -1685,7 +1717,7 @@ visibility: hidden;
   .call-now-button,#navbar > ul > li:nth-child(7),#footer .footer-top .social-links a:hover,#footer .footer-top .footer-newsletter form input[type=submit],#footer .footer-top .footer-newsletter form input[type=submit]:hover, .cta .cta-btn:hover,#hero .btn-get-started:hover {
     background: var(--color2);
   }
-  .call-now-button:hover {
+  #navbar > ul > li:nth-child(7),.call-now-button:hover {
     background-color: var(--color2);
     color: white;
   }
