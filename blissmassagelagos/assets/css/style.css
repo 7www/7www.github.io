@@ -1378,10 +1378,11 @@ section {
   float: right;
   font-size: 13px;
   margin-top: 60px!important;
-  padding-top: 40px!important;
-  padding-bottom: 40px!important;
-  background: var(--color3);
+  padding-top: 70px!important;
+  padding-bottom: 60px!important;
+  background: #00000063;
   border-radius: 50%;
+  box-shadow: 0 0 50px 19px #00000085;
 }
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
