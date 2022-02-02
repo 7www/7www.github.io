@@ -1730,7 +1730,7 @@ visibility: hidden;
 
   @font-face {
     font-family: SignatureFont;
-    src: url('/assets/fonts/Allison_Script.otf');
+    src: url('../fonts/Allison_Script.otf');
   }
 
 
