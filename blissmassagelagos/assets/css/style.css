@@ -1377,8 +1377,8 @@ section {
 #footer .credits {
   float: right;
   font-size: 13px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 40px!important;
+  padding-bottom: 40px!important;
 }
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
@@ -1411,8 +1411,8 @@ section {
   color: white;
 }
 #footer > div.container.footer-bottom.clearfix > div.credits > span:nth-child(2) {
-  font-size: 14px;
-  margin-top: 4px;
+  font-size: 14px!important;
+  margin-top: 12px!important;
 }
 #footer > div.container.footer-bottom.clearfix > div.credits > span {
   display: block;
@@ -1730,6 +1730,12 @@ visibility: hidden;
   #header,#header.fixed-top, #header.header-inner-pages {
     background: var(--color4);
   }
+
+  @font-face {
+    font-family: SignatureFont;
+    src: url('/assets/fonts/Allison_Script.otf');
+  }
+
 
 /*  #footer .footer-top .footer-newsletter form input[type=submit]:hover,.contact .php-email-form button[type=submit]:hover,.pricing .btn-buy:hover,.back-to-top:hover {
     background: var(--color5);
