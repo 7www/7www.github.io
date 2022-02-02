@@ -1377,8 +1377,11 @@ section {
 #footer .credits {
   float: right;
   font-size: 13px;
+  margin-top: 60px!important;
   padding-top: 40px!important;
   padding-bottom: 40px!important;
+  background: var(--color3);
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
@@ -1400,12 +1403,6 @@ section {
 .navbar-mobile > ul > li {
   display: table;
   margin: auto;
-}
-#footer > div.container.footer-bottom.clearfix > div.credits > div > span {
-  display: inline;
-  margin: 0px 0 0 4px;
-  font-size: 17px;
-  font-weight: 600;
 }
 #footer > div.container.footer-bottom.clearfix > div.credits > div > span > a, #footer > div.container.footer-bottom.clearfix > div.credits > div > a {
   color: white;
