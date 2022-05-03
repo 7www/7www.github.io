@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- CSS - Bootstrap -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- CSS - Main -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- jQuery -->
+  <script src="jquery-3.5.1.min.js"></script>
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
+  
+  <!-- Javascript -->
+  <script src="index.js"></script>
+
+
+<body>
+<div id="body_cover"></div>
+<div class="wrapper" style="margin: 8px; color: white;">
+
+  <div>
+    <div id="PageTitle">Average Scores (3 Games)</div>
+  </div>
+  <div class="summoner-wrapper">
+    <div id="s0" class="summoner" onclick="CopyToClipboard(this.id)">
+      <img id="s0-profileIconId" class="profileIconId"></img>
+      <div id="s0-name" class="name"></div>
+      <div id="s0-summonerLevel" class="summonerLevel"></div>
+      <div class="kda">
+        <div id="s0-kills" class="kills"></div>
+        <div id="s0-deaths" class="deaths"></div>
+        <div id="s0-assists" class="assists"></div>
+      </div>
+      <div id="s0-wins" class="wins"></div>
+      <div id="s0-losses" class="losses"></div>
+      <div id="s0-goldEarned" class="goldEarned"></div>
+      <div id="s0-totalMinionsKilled" class="totalMinionsKilled"></div>
+      <div id="s0-totalDamageDealtToChampions" class="totalDamageDealtToChampions"></div>
+      <div id="s0-totalDamageTaken" class="totalDamageTaken"></div>
+      <div id="s0-puuid" class="puuid"></div>
+    </div>
+  
+    <div id="s1" class="summoner" onclick="CopyToClipboard(this.id)">
+      <img id="s1-profileIconId" class="profileIconId"></img>  
+      <div id="s1-name" class="name"></div>
+      <div id="s1-summonerLevel" class="summonerLevel"></div>
+      <div class="kda">
+        <div id="s1-kills" class="kills"></div>
+        <div id="s1-deaths" class="deaths"></div>
+        <div id="s1-assists" class="assists"></div>
+      </div>
+      <div id="s1-wins" class="wins"></div>
+      <div id="s1-losses" class="losses"></div>
+      <div id="s1-goldEarned" class="goldEarned"></div>
+      <div id="s1-totalMinionsKilled" class="totalMinionsKilled"></div>
+      <div id="s1-totalDamageDealtToChampions" class="totalDamageDealtToChampions"></div>
+      <div id="s1-totalDamageTaken" class="totalDamageTaken"></div>
+      <div id="s1-puuid" class="puuid"></div>
+    </div>
+  
+    <div id="s2" class="summoner" onclick="CopyToClipboard(this.id)">
+      <img id="s2-profileIconId" class="profileIconId"></img>  
+      <div id="s2-name" class="name"></div>
+      <div id="s2-summonerLevel" class="summonerLevel"></div>
+      <div class="kda">
+        <div id="s2-kills" class="kills"></div>
+        <div id="s2-deaths" class="deaths"></div>
+        <div id="s2-assists" class="assists"></div>
+      </div>
+      <div id="s2-wins" class="wins"></div>
+      <div id="s2-losses" class="losses"></div>
+      <div id="s2-goldEarned" class="goldEarned"></div>
+      <div id="s2-totalMinionsKilled" class="totalMinionsKilled"></div>
+      <div id="s2-totalDamageDealtToChampions" class="totalDamageDealtToChampions"></div>
+      <div id="s2-totalDamageTaken" class="totalDamageTaken"></div>
+      <div id="s2-puuid" class="puuid"></div>
+    </div>
+  
+    <div id="s3" class="summoner" onclick="CopyToClipboard(this.id)">
+      <img id="s3-profileIconId" class="profileIconId"></img>  
+      <div id="s3-name" class="name"></div>
+      <div id="s3-summonerLevel" class="summonerLevel"></div>
+      <div class="kda">
+        <div id="s3-kills" class="kills"></div>
+        <div id="s3-deaths" class="deaths"></div>
+        <div id="s3-assists" class="assists"></div>  
+      </div>
+      <div id="s3-wins" class="wins"></div>
+      <div id="s3-losses" class="losses"></div>
+      <div id="s3-goldEarned" class="goldEarned"></div>
+      <div id="s3-totalMinionsKilled" class="totalMinionsKilled"></div>
+      <div id="s3-totalDamageDealtToChampions" class="totalDamageDealtToChampions"></div>
+      <div id="s3-totalDamageTaken" class="totalDamageTaken"></div>
+      <div id="s3-puuid" class="puuid"></div>
+    </div>
+  
+    <div id="s4" class="summoner" onclick="CopyToClipboard(this.id)">
+      <img id="s4-profileIconId" class="profileIconId"></img>  
+      <div id="s4-name" class="name"></div>
+      <div id="s4-summonerLevel" class="summonerLevel"></div>
+      <div class="kda">
+        <div id="s4-kills" class="kills"></div>
+        <div id="s4-deaths" class="deaths"></div>
+        <div id="s4-assists" class="assists"></div>
+      </div>
+      <div id="s4-wins" class="wins"></div>
+      <div id="s4-losses" class="losses"></div>
+      <div id="s4-goldEarned" class="goldEarned"></div>
+      <div id="s4-totalMinionsKilled" class="totalMinionsKilled"></div>
+      <div id="s4-totalDamageDealtToChampions" class="totalDamageDealtToChampions"></div>
+      <div id="s4-totalDamageTaken" class="totalDamageTaken"></div>
+      <div id="s4-puuid" class="puuid"></div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<textarea onchange="LoadStats()" style="font-size: 10px;
+position: absolute;
+bottom: 5px;
+left: 5px;
+right: 5px;
+padding: 10px;
+width: 250px;
+margin: auto;" name="lobbychat" id="lobbychat" cols="35" rows="10">
+Raddaggastt joined the lobby
+MCQUIN04 joined the lobby
+Andrewww05 joined the lobby
+TheRealZekken joined the lobby
+Goza joined the lobby</textarea>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+</body>
+</html>
