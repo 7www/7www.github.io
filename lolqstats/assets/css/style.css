@@ -14,7 +14,6 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
 a {
   text-decoration: none;
 }
@@ -1398,6 +1397,10 @@ section {
 /*--------------------------------------------------------------
 # Custom CSS Edits
 --------------------------------------------------------------*/
+.linebreak {
+  visibility: visible;
+}
+
 .puuid {
   visibility: hidden;
   height: 10px;
@@ -1417,7 +1420,7 @@ body {
   background-image: url(img/Summoners_Rift_Map.webp);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: cover;
 }
 #PageTitle {
   text-align: center;
@@ -1427,10 +1430,10 @@ body {
   margin-top: 2%;
 }
 #body_cover {
-  background: #010408c4;
-  position: absolute;
-  top: 0;
-  bottom: 0;
+  background: rgba(1, 4, 8, 0.77);
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
   width: 100%;
   z-index: -1;
 }
@@ -1438,6 +1441,7 @@ body {
   padding-left: calc(8% - 10px);
   padding-right: calc(2% - 10px);
   width: 100%;
+  min-height: 350px;
 }
 .name {
   font-size: medium;
@@ -1462,3 +1466,15 @@ body {
   background-color: #050505 !important;
 }
 
+.chatroom {
+  overflow: hidden!important;
+  width: 280px;
+  height: 400px;
+  bottom: 0;
+  position: inherit;
+  left: 0;
+  right: 0;
+  padding-top: 50px;
+  display: block;
+  margin: auto;
+}

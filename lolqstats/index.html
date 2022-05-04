@@ -43,11 +43,12 @@
 <div class="wrapper" style="margin: 8px; color: white;">
 
   <div>
-    <div id="PageTitle">Average Scores (3 Games)</div>
+    <div id="PageTitle" onclick="CopyToClipboard(this.id)">Average Scores (3 Games)</div>
   </div>
   <div class="summoner-wrapper">
     <div id="s0" class="summoner" onclick="CopyToClipboard(this.id)">
       <img id="s0-profileIconId" class="profileIconId"></img>
+      <div id="s0-linebreak" class="linebreak"></div>
       <div id="s0-name" class="name"></div>
       <div id="s0-summonerLevel" class="summonerLevel"></div>
       <div class="kda">
@@ -66,6 +67,7 @@
   
     <div id="s1" class="summoner" onclick="CopyToClipboard(this.id)">
       <img id="s1-profileIconId" class="profileIconId"></img>  
+      <div id="s1-linebreak" class="linebreak"></div>
       <div id="s1-name" class="name"></div>
       <div id="s1-summonerLevel" class="summonerLevel"></div>
       <div class="kda">
@@ -83,7 +85,8 @@
     </div>
   
     <div id="s2" class="summoner" onclick="CopyToClipboard(this.id)">
-      <img id="s2-profileIconId" class="profileIconId"></img>  
+      <img id="s2-profileIconId" class="profileIconId"></img>
+      <div id="s2-linebreak" class="linebreak"></div>
       <div id="s2-name" class="name"></div>
       <div id="s2-summonerLevel" class="summonerLevel"></div>
       <div class="kda">
@@ -101,7 +104,8 @@
     </div>
   
     <div id="s3" class="summoner" onclick="CopyToClipboard(this.id)">
-      <img id="s3-profileIconId" class="profileIconId"></img>  
+      <img id="s3-profileIconId" class="profileIconId"></img>
+      <div id="s3-linebreak" class="linebreak"></div>
       <div id="s3-name" class="name"></div>
       <div id="s3-summonerLevel" class="summonerLevel"></div>
       <div class="kda">
@@ -119,7 +123,8 @@
     </div>
   
     <div id="s4" class="summoner" onclick="CopyToClipboard(this.id)">
-      <img id="s4-profileIconId" class="profileIconId"></img>  
+      <img id="s4-profileIconId" class="profileIconId"></img> 
+      <div id="s4-linebreak" class="linebreak"></div>
       <div id="s4-name" class="name"></div>
       <div id="s4-summonerLevel" class="summonerLevel"></div>
       <div class="kda">
@@ -138,12 +143,10 @@
   </div>
 
 
-</div>
 
-
-<textarea onchange="LoadStats()" style="font-size: 10px;
-position: absolute;
-bottom: 5px;
+<div>
+  <textarea onchange="LoadStats()" style="font-size: 10px;
+display: block;
 left: 5px;
 right: 5px;
 padding: 10px;
@@ -154,17 +157,17 @@ MCQUIN04 joined the lobby
 Andrewww05 joined the lobby
 TheRealZekken joined the lobby
 Goza joined the lobby</textarea>
+</div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
+<div>
+  <iframe seamless="seamless" scrolling="no" class="chatroom" src="https://deadsimplechat.com/y9g_wQHF_"></iframe>
+</div>
+
 
 </div>
+
+
 
 </body>
 </html>
