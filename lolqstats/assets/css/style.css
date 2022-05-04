@@ -1422,7 +1422,11 @@ body {
   background-position: top;
   background-size: cover;
 }
-#PageTitle {
+#PageWebsiteUrl {
+  font-size: medium;
+}
+
+#PageDetails {
   text-align: center;
   font-size: x-large;
   padding: 12px;
