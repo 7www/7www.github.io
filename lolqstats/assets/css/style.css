@@ -1426,6 +1426,12 @@ body {
   font-size: medium;
 }
 
+#PageChat {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
 #PageDetails {
   text-align: center;
   font-size: x-large;
