@@ -26,7 +26,7 @@ function CopyToClipboard(id) {
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
-    alert("Text Copied: "+String(range).replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm, ""));
+    alert("Text Copied 📋 Ready to Paste.\n"+String(range).replace(/^(?=\n)$|^\s*|\s*$|\n\n+/gm, ""));
 }
 
 
