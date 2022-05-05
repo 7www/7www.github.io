@@ -6,6 +6,8 @@ let arr_goldEarned = [];
 let arr_totalMinionsKilled = [];
 let arr_totalDamageDealtToChampions = [];
 let arr_totalDamageTaken = [];
+let arr_neutralMinionsKilled = [];
+
 
 
 function ClearArray() {
@@ -17,6 +19,7 @@ function ClearArray() {
     arr_totalMinionsKilled = [];
     arr_totalDamageDealtToChampions = [];
     arr_totalDamageTaken = [];
+    arr_neutralMinionsKilled = [];
 }
 
 function CopyToClipboard(id) {
@@ -119,17 +122,18 @@ function GetMatchDetails(matchid,divid,puuid) {
             let xtotalMinionsKilled = 0;
             let xtotalDamageDealtToChampions = 0;
             let xtotalDamageTaken = 0;
+            let xneutralMinionsKilled = 0;
 /*           return jsonobj; */
             for(var i = 0;i < jsonobj.length;i++){
                 if (String(jsonobj[i].puuid) == puuid){
                     console.log("puuid is equal");
                     console.log(divid);
-
                     arr_kills.splice(divid, 0, [divid, jsonobj[i].kills]);
                     arr_deaths.splice(divid, 0, [divid, jsonobj[i].deaths]);
                     arr_assists.splice(divid, 0, [divid, jsonobj[i].assists]);
                     arr_goldEarned.splice(divid, 0, [divid, jsonobj[i].goldEarned]);
                     arr_totalMinionsKilled.splice(divid, 0, [divid, jsonobj[i].totalMinionsKilled]);
+                    arr_neutralMinionsKilled.splice(divid, 0, [divid, jsonobj[i].neutralMinionsKilled]);
                     arr_totalDamageDealtToChampions.splice(divid, 0, [divid, jsonobj[i].totalDamageDealtToChampions]);
                     arr_totalDamageTaken.splice(divid, 0, [divid, jsonobj[i].totalDamageTaken]);
 
@@ -168,6 +172,11 @@ function GetMatchDetails(matchid,divid,puuid) {
                             xtotalMinionsKilled = xtotalMinionsKilled + arr_totalMinionsKilled[i][1];
                         }
                     }
+                    for (let i = 0; i < arr_neutralMinionsKilled.length; i++) {
+                        if (arr_neutralMinionsKilled[i][0] == divid) {
+                            xneutralMinionsKilled = xneutralMinionsKilled + arr_neutralMinionsKilled[i][1];
+                        }
+                    }
                     for (let i = 0; i < arr_totalDamageDealtToChampions.length; i++) {
                         if (arr_totalDamageDealtToChampions[i][0] == divid) {
                             xtotalDamageDealtToChampions = xtotalDamageDealtToChampions + arr_totalDamageDealtToChampions[i][1];
@@ -191,6 +200,7 @@ function GetMatchDetails(matchid,divid,puuid) {
                     xassists = xassists / 3;
                     xgoldEarned = xgoldEarned / 3;
                     xtotalMinionsKilled = xtotalMinionsKilled / 3;
+                    xneutralMinionsKilled = xneutralMinionsKilled / 3;
                     xtotalDamageDealtToChampions = xtotalDamageDealtToChampions / 3;
                     xtotalDamageTaken = xtotalDamageTaken / 3;
 
@@ -198,7 +208,7 @@ function GetMatchDetails(matchid,divid,puuid) {
                     document.getElementById("s"+divid+"-deaths").innerHTML = xdeaths.toFixed(0) + "⚰️ Deaths"
                     document.getElementById("s"+divid+"-assists").innerHTML = xassists.toFixed(0) + "🛡️ Assists"
                     document.getElementById("s"+divid+"-goldEarned").innerHTML = xgoldEarned.toFixed(0) + " Gold";
-                    document.getElementById("s"+divid+"-totalMinionsKilled").innerHTML = xtotalMinionsKilled.toFixed(0) + "👹 Minions";
+                    document.getElementById("s"+divid+"-totalMinionsKilled").innerHTML = xtotalMinionsKilled.toFixed(0) + "👹 Minions " + xneutralMinionsKilled.toFixed(0) + "👾 Monsters";
                     document.getElementById("s"+divid+"-totalDamageDealtToChampions").innerHTML = xtotalDamageDealtToChampions.toFixed(0) + "💪 Damage (Champions)";
                     document.getElementById("s"+divid+"-totalDamageTaken").innerHTML = xtotalDamageTaken.toFixed(0) + "🤕 Damage (Tanked)";
                 }
