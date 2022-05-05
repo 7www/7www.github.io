@@ -65,7 +65,7 @@ function GetSummonerName(SName,divid) {
     //      console.log(jsonobj.puuid);
     //        document.getElementById("s"+divid+"-puuid").innerHTML = jsonobj.puuid;
             GetMatchHistory(String(jsonobj.puuid),String(divid))
-            document.getElementById("s"+divid+"-profileIconId").src = `https://ddragon.leagueoflegends.com/cdn/12.6.1/img/profileicon/${jsonobj.profileIconId}.png`;
+            document.getElementById("s"+divid+"-profileIconId").src = `https://ddragon.leagueoflegends.com/cdn/12.8.1/img/profileicon/${jsonobj.profileIconId}.png`;
             document.getElementById("s"+divid+"-profileIconId").style.borderStyle = "double";
             document.getElementById("s"+divid+"-linebreak").innerHTML = "━━━━━━━━";
             document.getElementById("s"+divid+"-name").innerHTML = jsonobj.name;
