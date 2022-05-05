@@ -147,22 +147,26 @@
 
 <div>
   <div id="title-lobbychat">Instructions</div>
-  <div id="desc-lobbychat">1. Copy the lobby chat text from the League of Legends client <br>
-    2. Paste the lobby chat text here</div>
-  <textarea onchange="LoadStats()" style="font-size: 12px;
-display: block;
-left: 5px;
-right: 5px;
-padding: 10px;
-width: 280px;
-height:120px;
-margin: auto;" name="lobbychat" id="lobbychat" cols="35" rows="10">
-Raddaggastt joined the lobby
-MCQUIN04 joined the lobby
-Andrewww05 joined the lobby
-TheRealZekken joined the lobby
-Goza joined the lobby</textarea>
-</div>
+  <div class="desc-lobbychat">1. Copy the lobby chat text from the League of Legends client <br>
+    2. Paste the lobby chat text in the box here then click anywhere.</div>
+    <div id="main-instructions-wrapper">
+      <div id="instructions-wrapper">
+        <img id="example-lobby" src="assets/css/img/lobby.png">
+        <textarea onchange="LoadStats()" style="font-size: 12px;
+        display: flex;
+        padding: 10px;
+        width: 280px;
+        height: 139px;" name="lobbychat" id="lobbychat" cols="35" rows="10">
+      Raddaggastt joined the lobby
+      MCQUIN04 joined the lobby
+      Andrewww05 joined the lobby
+      TheRealZekken joined the lobby
+      Goza joined the lobby</textarea>
+      </div>
+  
+    </div>
+    
+    </div>
 
 
 <div>

@@ -1443,8 +1443,18 @@ body {
   text-align: center;
   font-size: x-large;
 }
-
-
+#main-instructions-wrapper {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+#instructions-wrapper{
+  display: inline-flex;
+}
+#example-lobby {
+  width: 280px;
+  display: flex;
+}
 #body_cover {
   background: rgba(1, 4, 8, 0.77);
   position: fixed;
@@ -1453,7 +1463,7 @@ body {
   width: 100%;
   z-index: -1;
 }
-#desc-lobbychat {
+.desc-lobbychat {
   font-size: small;
   margin: auto;
   text-align: left;
