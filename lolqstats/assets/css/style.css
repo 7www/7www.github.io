@@ -1476,7 +1476,7 @@ body {
   padding-left: calc(8% - 10px);
   padding-right: calc(2% - 10px);
   width: 100%;
-  min-height: 350px;
+  min-height: 310px;
 }
 .name {
   font-size: medium;
