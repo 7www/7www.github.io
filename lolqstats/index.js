@@ -124,6 +124,7 @@ function GetMatchDetails(matchid,divid,puuid) {
             let xtotalDamageDealtToChampions = 0;
             let xtotalDamageTaken = 0;
             let xneutralMinionsKilled = 0;
+            let xkda = 0;
 /*           return jsonobj; */
             for(var i = 0;i < jsonobj.length;i++){
                 if (String(jsonobj[i].puuid) == puuid){
@@ -230,11 +231,9 @@ function GetMatchDetails(matchid,divid,puuid) {
                     {
                         document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Wins";                        
                     }
+                    xkda = xkills.toFixed(0)+"/"+xdeaths.toFixed(0)+"/"+xassists.toFixed(0)
 
-
-                    document.getElementById("s"+divid+"-kills").innerHTML = xkills.toFixed(0) + "/";
-                    document.getElementById("s"+divid+"-deaths").innerHTML = xdeaths.toFixed(0) + "/";
-                    document.getElementById("s"+divid+"-assists").innerHTML = xassists.toFixed(0);
+                    document.getElementById("s"+divid+"-kills").innerHTML = xkda;
                     document.getElementById("s"+divid+"-goldEarned").innerHTML = xgoldEarned.toFixed(0) + " Gold";
                     document.getElementById("s"+divid+"-totalMinionsKilled").innerHTML = xtotalMinionsKilled.toFixed(0) + "👹 Minions " + xneutralMinionsKilled.toFixed(0) + "👾 Monsters";
                     document.getElementById("s"+divid+"-totalDamageDealtToChampions").innerHTML = xtotalDamageDealtToChampions.toFixed(0) + "💪 Damage (Champions)";
