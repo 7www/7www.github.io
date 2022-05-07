@@ -20,6 +20,7 @@ function ClearArray() {
     arr_totalDamageDealtToChampions = [];
     arr_totalDamageTaken = [];
     arr_neutralMinionsKilled = [];
+    xwins = 0;
 }
 
 function CopyToClipboard(id) {
@@ -128,6 +129,7 @@ function GetMatchDetails(matchid,divid,puuid) {
                 if (String(jsonobj[i].puuid) == puuid){
                     console.log("puuid is equal");
                     console.log(divid);
+                    arr_wins.splice(divid, 0, [divid, jsonobj[i].win]);
                     arr_kills.splice(divid, 0, [divid, jsonobj[i].kills]);
                     arr_deaths.splice(divid, 0, [divid, jsonobj[i].deaths]);
                     arr_assists.splice(divid, 0, [divid, jsonobj[i].assists]);
@@ -187,14 +189,16 @@ function GetMatchDetails(matchid,divid,puuid) {
                             xtotalDamageTaken = xtotalDamageTaken + arr_totalDamageTaken[i][1];
                         }
                     }
+
                     for (let i = 0; i < arr_wins.length; i++) {
-                        if (arr_wins[i][0] == divid) {
+                        if (arr_wins[i][0] == divid && arr_wins[i][1] == true) {
                             console.log("wins");
+                            xwins = xwins + 1; 
                             console.log(arr_wins[i][0]);
-                            xwins = xwins + arr_wins[i][1];
                         }
                     }
-                    
+                    console.log(xwins);
+
                     xkills = xkills / 3;
                     xdeaths = xdeaths / 3;
                     xassists = xassists / 3;
@@ -203,7 +207,23 @@ function GetMatchDetails(matchid,divid,puuid) {
                     xneutralMinionsKilled = xneutralMinionsKilled / 3;
                     xtotalDamageDealtToChampions = xtotalDamageDealtToChampions / 3;
                     xtotalDamageTaken = xtotalDamageTaken / 3;
+                    
 
+                    if (xtotalDamageDealtToChampions < 10000) {
+                        document.getElementById("s"+divid+"-totalDamageDealtToChampions").style.color = "#ff3737";                        
+                    }
+                    else
+                    {
+                        document.getElementById("s"+divid+"-totalDamageDealtToChampions").style.color = "white";
+                    }
+                    if (xgoldEarned < 8000) {
+                        document.getElementById("s"+divid+"-goldEarned").style.color = "#ff3737";                        
+                    }
+                    else
+                    {
+                        document.getElementById("s"+divid+"-goldEarned").style.color = "white";
+                    }
+                    document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Wins"
                     document.getElementById("s"+divid+"-kills").innerHTML = xkills.toFixed(0) + "⚔️ Kills"
                     document.getElementById("s"+divid+"-deaths").innerHTML = xdeaths.toFixed(0) + "⚰️ Deaths"
                     document.getElementById("s"+divid+"-assists").innerHTML = xassists.toFixed(0) + "🛡️ Assists"
