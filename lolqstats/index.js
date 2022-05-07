@@ -223,10 +223,18 @@ function GetMatchDetails(matchid,divid,puuid) {
                     {
                         document.getElementById("s"+divid+"-goldEarned").style.color = "white";
                     }
-                    document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Wins"
-                    document.getElementById("s"+divid+"-kills").innerHTML = xkills.toFixed(0) + "⚔️ Kills"
-                    document.getElementById("s"+divid+"-deaths").innerHTML = xdeaths.toFixed(0) + "⚰️ Deaths"
-                    document.getElementById("s"+divid+"-assists").innerHTML = xassists.toFixed(0) + "🛡️ Assists"
+                    if (xwins.toFixed(0) == 1) {
+                        document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Win";                        
+                    }
+                    else
+                    {
+                        document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Wins";                        
+                    }
+
+
+                    document.getElementById("s"+divid+"-kills").innerHTML = xkills.toFixed(0) + "/";
+                    document.getElementById("s"+divid+"-deaths").innerHTML = xdeaths.toFixed(0) + "/";
+                    document.getElementById("s"+divid+"-assists").innerHTML = xassists.toFixed(0);
                     document.getElementById("s"+divid+"-goldEarned").innerHTML = xgoldEarned.toFixed(0) + " Gold";
                     document.getElementById("s"+divid+"-totalMinionsKilled").innerHTML = xtotalMinionsKilled.toFixed(0) + "👹 Minions " + xneutralMinionsKilled.toFixed(0) + "👾 Monsters";
                     document.getElementById("s"+divid+"-totalDamageDealtToChampions").innerHTML = xtotalDamageDealtToChampions.toFixed(0) + "💪 Damage (Champions)";

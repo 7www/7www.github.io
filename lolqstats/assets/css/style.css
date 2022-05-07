@@ -1463,6 +1463,9 @@ body {
   width: 100%;
   z-index: -1;
 }
+.kda {
+    display: inline-flex;
+}
 .desc-lobbychat {
   font-size: small;
   margin: auto;
