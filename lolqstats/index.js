@@ -250,64 +250,64 @@ function GetMatchDetails(matchid,divid,puuid) {
 
 
 function SetLevelBorder(xlevel, divid) {
-    if (xlevel > 1) {
+    if (xlevel >= 1) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/1.webp`;
     }
-    if (xlevel > 30) {
+    if (xlevel >= 30) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/30.webp`;
     }
-    if (xlevel > 50) {
+    if (xlevel >= 50) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/50.webp`;
     }
-    if (xlevel > 75) {
+    if (xlevel >= 75) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/75.webp`;      
     }
-    if (xlevel > 100) {
+    if (xlevel >= 100) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/100.webp`;
     }
-    if (xlevel > 125) {
+    if (xlevel >= 125) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/125.webp`;   
     }
-    if (xlevel > 150) {
+    if (xlevel >= 150) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/150.webp`;
     }
-    if (xlevel > 175) {
+    if (xlevel >= 175) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/175.webp`;
     }
-    if (xlevel > 200) {
+    if (xlevel >= 200) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/200.webp`;
     }
-    if (xlevel > 225) {
+    if (xlevel >= 225) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/225.webp`;
     }
-    if (xlevel > 250) {
+    if (xlevel >= 250) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/250.webp`;
     }
-    if (xlevel > 275) {
+    if (xlevel >= 275) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/275.webp`;
     }
-    if (xlevel > 300) {
+    if (xlevel >= 300) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/300.webp`;
     }
-    if (xlevel > 325) {
+    if (xlevel >= 325) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/325.webp`;
     }
-    if (xlevel > 350) {
+    if (xlevel >= 350) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/350.webp`;
     }
-    if (xlevel > 375) {
+    if (xlevel >= 375) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/375.webp`;
     }
-    if (xlevel > 400) {
+    if (xlevel >= 400) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/400.webp`;
     }
-    if (xlevel > 425) {
+    if (xlevel >= 425) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/425.webp`;
     }
-    if (xlevel > 450) {
+    if (xlevel >= 450) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/450.webp`;
     }
-    if (xlevel > 500) {
+    if (xlevel >= 500) {
         document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/500.webp`;
     }
 
