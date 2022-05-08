@@ -70,6 +70,18 @@ function GetSummonerName(SName,divid) {
             document.getElementById("s"+divid+"-profileIconId").style.borderStyle = "double";
             document.getElementById("s"+divid+"-linebreak").innerHTML = "━━━━━━━━";
             document.getElementById("s"+divid+"-name").innerHTML = jsonobj.name;
+
+            document.getElementById("s"+divid+"-summonerLevel").style.cssText =`
+            position: absolute;
+            margin-top: 60px;
+            margin-left: 8px;
+            background: #15181b;
+            border-radius: 25px;
+            width: 65px;
+            text-align: center;
+            padding: 2px;
+            border: #95672e 2px solid;
+            `
             document.getElementById("s"+divid+"-summonerLevel").innerHTML = "Level "+jsonobj.summonerLevel;
         })
     },2000);
