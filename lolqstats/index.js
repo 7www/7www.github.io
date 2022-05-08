@@ -9,7 +9,6 @@ let arr_totalDamageTaken = [];
 let arr_neutralMinionsKilled = [];
 
 
-
 function ClearArray() {
     arr_kills = [];
     arr_deaths = [];
@@ -65,6 +64,7 @@ function GetSummonerName(SName,divid) {
     //      console.log(jsonobj.summonerLevel);
     //      console.log(jsonobj.puuid);
     //        document.getElementById("s"+divid+"-puuid").innerHTML = jsonobj.puuid;
+            SetLevelBorder(jsonobj.summonerLevel,divid);
             GetMatchHistory(String(jsonobj.puuid),String(divid))
             document.getElementById("s"+divid+"-profileIconId").src = `https://ddragon.leagueoflegends.com/cdn/12.8.1/img/profileicon/${jsonobj.profileIconId}.png`;
             document.getElementById("s"+divid+"-profileIconId").style.borderStyle = "double";
@@ -249,3 +249,66 @@ function GetMatchDetails(matchid,divid,puuid) {
 
 
 
+function SetLevelBorder(xlevel, divid) {
+    if (xlevel > 1) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/1.webp`;
+    }
+    if (xlevel > 30) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/30.webp`;
+    }
+    if (xlevel > 50) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/50.webp`;
+    }
+    if (xlevel > 75) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/75.webp`;      
+    }
+    if (xlevel > 100) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/100.webp`;
+    }
+    if (xlevel > 125) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/125.webp`;   
+    }
+    if (xlevel > 150) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/150.webp`;
+    }
+    if (xlevel > 175) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/175.webp`;
+    }
+    if (xlevel > 200) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/200.webp`;
+    }
+    if (xlevel > 225) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/225.webp`;
+    }
+    if (xlevel > 250) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/250.webp`;
+    }
+    if (xlevel > 275) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/275.webp`;
+    }
+    if (xlevel > 300) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/300.webp`;
+    }
+    if (xlevel > 325) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/325.webp`;
+    }
+    if (xlevel > 350) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/350.webp`;
+    }
+    if (xlevel > 375) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/375.webp`;
+    }
+    if (xlevel > 400) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/400.webp`;
+    }
+    if (xlevel > 425) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/425.webp`;
+    }
+    if (xlevel > 450) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/450.webp`;
+    }
+    if (xlevel > 500) {
+        document.getElementById("s"+divid+"-profileIconId-border").src = `assets/css/img/levelborders/500.webp`;
+    }
+
+}

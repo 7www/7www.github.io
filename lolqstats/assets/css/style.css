@@ -1435,9 +1435,8 @@ body {
 #PageDetails {
   text-align: center;
   font-size: x-large;
-  padding: 12px;
-  margin-bottom: 2%;
-  margin-top: 2%;
+  margin-bottom: 65px;
+  margin-top: 10px;
 }
 #title-lobbychat {
   text-align: center;
@@ -1466,6 +1465,7 @@ body {
 .kda {
     display: inline-flex;
 }
+
 .desc-lobbychat {
   font-size: small;
   margin: auto;
@@ -1491,13 +1491,24 @@ body {
   font-size: 11px;
   margin: auto;
 }
-
 .profileIconId {
   border-radius: 50%;
   border: #2f3137 5px;
-  border-style: hidden;
-  height: 80px;
+  border-style: none!important;
+  height: 100px;
   margin-left: -10px;
+  margin-top: -30px;
+}
+.profileIconId-border {
+  position: absolute;
+  top: -60px;
+  left: -40px;
+  width: 160px;
+}
+.profileIconId-container {
+  float: left;
+  position: relative;
+  height: 100px;
 }
 
 body {
