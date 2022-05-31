@@ -1399,6 +1399,8 @@ section {
 --------------------------------------------------------------*/
 .linebreak {
   visibility: visible;
+  margin: -10px 0 -10px 0;
+  color: #8a602c;
 }
 
 .puuid {
@@ -1493,8 +1495,7 @@ body {
 }
 .profileIconId {
   border-radius: 50%;
-  border: #2f3137 5px;
-  border-style: none!important;
+  border: #94662e 5px;
   height: 100px;
   margin-left: -10px;
   margin-top: -30px;
@@ -1504,6 +1505,7 @@ body {
   top: -60px;
   left: -40px;
   width: 160px;
+  display: none;
 }
 .profileIconId-container {
   float: left;

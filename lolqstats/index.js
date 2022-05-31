@@ -1,3 +1,4 @@
+let arr_SummonerNames = [];
 let arr_kills = [];
 let arr_deaths = [];
 let arr_assists = [];
@@ -9,7 +10,9 @@ let arr_totalDamageTaken = [];
 let arr_neutralMinionsKilled = [];
 
 
+
 function ClearArray() {
+    arr_SummonerNames = []
     arr_kills = [];
     arr_deaths = [];
     arr_assists = [];
@@ -37,7 +40,8 @@ function LoadStats() {
     var lines = document.getElementById('lobbychat').value.trim().split('\n');
     for(var i = 0;i < lines.length;i++){
         var sumn = String(lines[i]).split(' ').slice(0, -3).join(' ');
-        console.log(sumn);
+        arr_SummonerNames = sumn
+        console.log(arr_SummonerNames)
         GetSummonerName(sumn,String(i));
     }
     ClearArray();
@@ -66,7 +70,7 @@ function GetSummonerName(SName,divid) {
     //        document.getElementById("s"+divid+"-puuid").innerHTML = jsonobj.puuid;
             SetLevelBorder(jsonobj.summonerLevel,divid);
             GetMatchHistory(String(jsonobj.puuid),String(divid))
-            document.getElementById("s"+divid+"-profileIconId").src = `https://ddragon.leagueoflegends.com/cdn/12.8.1/img/profileicon/${jsonobj.profileIconId}.png`;
+            document.getElementById("s"+divid+"-profileIconId").src = `https://ddragon.leagueoflegends.com/cdn/12.9.1/img/profileicon/${jsonobj.profileIconId}.png`;
             document.getElementById("s"+divid+"-profileIconId").style.borderStyle = "double";
             document.getElementById("s"+divid+"-linebreak").innerHTML = "━━━━━━━━";
             document.getElementById("s"+divid+"-name").innerHTML = jsonobj.name;
@@ -237,19 +241,19 @@ function GetMatchDetails(matchid,divid,puuid) {
                         document.getElementById("s"+divid+"-goldEarned").style.color = "white";
                     }
                     if (xwins.toFixed(0) == 1) {
-                        document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Win";                        
+                        document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + " Win";                        
                     }
                     else
                     {
-                        document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + "🏆 Wins";                        
+                        document.getElementById("s"+divid+"-wins").innerHTML = xwins.toFixed(0) + " Wins";                        
                     }
                     xkda = xkills.toFixed(0)+"/"+xdeaths.toFixed(0)+"/"+xassists.toFixed(0)
 
                     document.getElementById("s"+divid+"-kills").innerHTML = xkda;
                     document.getElementById("s"+divid+"-goldEarned").innerHTML = xgoldEarned.toFixed(0) + " Gold";
-                    document.getElementById("s"+divid+"-totalMinionsKilled").innerHTML = xtotalMinionsKilled.toFixed(0) + "👹 Minions " + xneutralMinionsKilled.toFixed(0) + "👾 Monsters";
-                    document.getElementById("s"+divid+"-totalDamageDealtToChampions").innerHTML = xtotalDamageDealtToChampions.toFixed(0) + "💪 Damage (Champions)";
-                    document.getElementById("s"+divid+"-totalDamageTaken").innerHTML = xtotalDamageTaken.toFixed(0) + "🤕 Damage (Tanked)";
+                    document.getElementById("s"+divid+"-totalMinionsKilled").innerHTML = xtotalMinionsKilled.toFixed(0) + " Minions " + xneutralMinionsKilled.toFixed(0) + " Monsters";
+                    document.getElementById("s"+divid+"-totalDamageDealtToChampions").innerHTML = xtotalDamageDealtToChampions.toFixed(0) + " Damage (Champions)";
+                    document.getElementById("s"+divid+"-totalDamageTaken").innerHTML = xtotalDamageTaken.toFixed(0) + " Damage (Tanked)";
                 }
                 else {
                     console.log("puuid is not equal");
