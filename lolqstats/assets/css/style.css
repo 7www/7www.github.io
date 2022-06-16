@@ -1398,7 +1398,7 @@ section {
 # Custom CSS Edits
 --------------------------------------------------------------*/
 .linebreak {
-  visibility: visible;
+  visibility: hidden;
   margin: -10px 0 -10px 0;
   color: #8a602c;
 }
@@ -1502,10 +1502,10 @@ body {
 }
 .profileIconId-border {
   position: absolute;
-  top: -60px;
-  left: -40px;
-  width: 160px;
-  display: none;
+  top: -99px;
+  left: -74px;
+  width: 228px;
+  /* display: none; */
 }
 .profileIconId-container {
   float: left;
@@ -1519,7 +1519,7 @@ body {
 
 .chatroom {
   overflow: hidden!important;
-  width: 280px;
+  width: 100%;
   height:500px;
   bottom: 0;
   position: inherit;
