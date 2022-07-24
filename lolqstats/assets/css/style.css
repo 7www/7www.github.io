@@ -1495,11 +1495,12 @@ body {
 }
 .profileIconId {
   border-radius: 50%;
-  border: #94662e 5px;
+  border: #f0fff000;
   height: 100px;
   margin-left: -10px;
   margin-top: -30px;
 }
+
 .profileIconId-border {
   position: absolute;
   top: -99px;
@@ -1511,6 +1512,7 @@ body {
   float: left;
   position: relative;
   height: 100px;
+  display: inline-flex;
 }
 
 body {
