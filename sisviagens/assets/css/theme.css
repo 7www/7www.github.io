@@ -20761,6 +20761,31 @@ background: none;
   background-color: rgb(7 22 162);
   border: none;
 }
-.fixed-top {
-    height: 164px;
+.navbar {
+  display: inherit;
 }
+
+
+section {
+  padding-top: 7rem;
+}
+
+
+
+@media (min-width: 540px){
+  .d-sm-flex {
+    display: inherit !important;
+}}
+@media (min-width: 992px){
+  .py-lg-8 {
+    padding-top: 5.65rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-collapse {
+    zoom: 1.4;
+  }
+}
+
+
