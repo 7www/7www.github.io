@@ -20763,14 +20763,14 @@ background: none;
 }
 .navbar {
   display: inherit;
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   float: left;
   width: 100%;
-  margin-top: 2rem;
 }
 
 .fixed-top {
+  top:-1px;
   position: sticky;
 }
 .collapse.show {
@@ -20782,7 +20782,7 @@ section {
 }
 .swiper {
   text-align: center;
-  padding: 10px;
+  padding: 13px 10px 10px 10px;
   background: white;
 }
 .swiper-button-prev, .swiper-button-next {
@@ -20797,6 +20797,9 @@ section {
 }
 
 @media (min-width: 992px){
+  .navbar-collapse {
+    zoom: 1.2;
+  }
   .py-lg-8 {
     padding-top: 1.65rem !important;
     padding-bottom: 2.5rem !important;
