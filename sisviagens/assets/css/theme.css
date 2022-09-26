@@ -20770,22 +20770,51 @@ section {
   padding-top: 7rem;
 }
 
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.swiper {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.swiper-button-prev, .swiper-button-next {
+  top: 50%;
+}
 
 
 @media (min-width: 540px){
   .d-sm-flex {
     display: inherit !important;
-}}
-@media (min-width: 992px){
-  .py-lg-8 {
-    padding-top: 5.65rem !important;
-    padding-bottom: 2.5rem !important;
   }
 }
+
+@media (min-width: 992px){
+  .py-lg-8 {
+    padding-top: 2.65rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+      right: -1rem;
+  }
+}
+
 @media (max-width: 992px) {
   .navbar-collapse {
     zoom: 1.4;
   }
+  .swiper-button-prev {
+    left: -0.7rem;
+  }
+  .swiper-button-next {
+      right: -0.7rem;
+  }
 }
+
+
 
 
