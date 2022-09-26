@@ -20752,7 +20752,7 @@ a {
 .bg-dark{
   background-image: url("img/container-logo.jpg");
   background-size: cover;
-  height: 100vh;
+  height:100vh;
 }
 .swiper-shadow::before, .swiper-shadow::after{
 background: none;
@@ -20763,16 +20763,22 @@ background: none;
 }
 .navbar {
   display: inherit;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  float: left;
+  width: 100%;
+  margin-top: 2rem;
 }
 
+.fixed-top {
+  position: sticky;
+}
+.collapse.show {
+  height: 100vh;
+}
 
 section {
   padding-top: 7rem;
-}
-
-.navbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 .swiper {
   text-align: center;
@@ -20792,7 +20798,7 @@ section {
 
 @media (min-width: 992px){
   .py-lg-8 {
-    padding-top: 2.65rem !important;
+    padding-top: 1.65rem !important;
     padding-bottom: 2.5rem !important;
   }
   .swiper-button-prev {
