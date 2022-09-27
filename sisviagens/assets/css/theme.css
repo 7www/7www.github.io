@@ -20748,6 +20748,9 @@ a {
 .mt-lg-0 {
   align-items: center;
 }
+input#FormControl7, #FormControl8 {
+  width: 100%;
+}
 
 .bg-dark{
   background-image: url("img/container-logo.jpg");
@@ -20788,7 +20791,53 @@ section {
 .swiper-button-prev, .swiper-button-next {
   top: 50%;
 }
+select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
+  width: fit-content;
+}
+form {
+  width: 66%;
+  margin: auto;
+}
 
+
+.form-control::placeholder {
+  color: white!important;
+}
+
+.form-control {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  background: #000000b3!important;
+  text-align: center;
+  border: none;
+  color: white!important;
+}
+
+.form-group {
+  display: flex;
+  width: auto;
+  text-align: center;
+  align-items: center;
+}
+.form-group.submit-button {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  padding-top: 3rem;
+}
+.form-group.submit-button button {
+  width: 33rem;
+}
+label {
+  margin-bottom: 0.5rem;
+  margin-top: 1.25rem;
+  margin-right: 0.8rem;
+  color: white;
+  font-weight: 500;
+  min-width: fit-content;
+  float: left;
+  text-shadow: 0px 1px 13px black;
+}
 
 @media (min-width: 540px){
   .d-sm-flex {
