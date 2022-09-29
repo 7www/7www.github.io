@@ -52,7 +52,7 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     color: white!important;
   }
   .bg-dark{
-    height: 100%;
+    height: calc(100% + 50px);
     width: 100%;
   }
   p.mx-auto.text-center.w-lg-75.text-white.text-center.w-lg-75.text-white {
