@@ -4,9 +4,9 @@
     }
     form {
         margin: auto;
-        padding-left: 3rem;
+        padding-left: 1rem;
         width: 100%;
-        padding-right: 3rem;
+        padding-right: 1rem;
     }
   }
 @media (min-width: 992px){
@@ -53,7 +53,9 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     border: none;
     color: white!important;
   }
-  
+  .bg-dark{
+    height:115vh;
+  }
   .form-group {
     width: auto;
     text-align: center;
@@ -66,7 +68,7 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     padding-top: 3rem;
   }
   .form-group.submit-button button {
-    width: 100%;
+    width: 260px;
   }
   label {
     margin-bottom: 0.5rem;
