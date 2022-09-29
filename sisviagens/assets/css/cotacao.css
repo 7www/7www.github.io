@@ -51,10 +51,6 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     border: none;
     color: white!important;
   }
-  .bg-dark{
-    height: calc(100% + 50px);
-    width: 100%;
-  }
   p.mx-auto.text-center.w-lg-75.text-white.text-center.w-lg-75.text-white {
     padding: 1rem;
     text-shadow: 0px 1px 4px black;
