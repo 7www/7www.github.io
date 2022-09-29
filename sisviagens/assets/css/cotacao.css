@@ -54,7 +54,9 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     color: white!important;
   }
   .bg-dark{
-    height:115vh;
+    float: left;
+    bottom: 0;
+    top: 0;
   }
   .form-group {
     width: auto;
