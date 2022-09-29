@@ -52,9 +52,8 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     color: white!important;
   }
   .bg-dark{
-    float: left;
-    bottom: 0;
-    top: 0;
+    height: 100%;
+    width: 100%;
   }
   p.mx-auto.text-center.w-lg-75.text-white.text-center.w-lg-75.text-white {
     padding: 1rem;
