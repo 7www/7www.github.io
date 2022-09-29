@@ -1,0 +1,85 @@
+@media (max-width: 540px){
+    .form-group {
+        display: block;
+    }
+    form {
+        margin: auto;
+        padding-left: 3rem;
+        width: 100%;
+        padding-right: 3rem;
+    }
+  }
+@media (min-width: 992px){
+    .form-group {
+        display: flex;
+    }
+    form {
+        margin: auto;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 100%;
+    }
+  }
+  
+form {
+    width: 90%;
+    margin: auto;
+}
+
+
+.container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+
+input#FormControl7, #FormControl8 {
+    width: 100%;
+  }
+select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
+    width: fit-content;
+  } 
+  
+  .form-control::placeholder {
+    color: white!important;
+  }
+  
+  .form-control {
+    margin-right: 2rem;
+    margin-top: 1rem;
+    background: #000000b3!important;
+    text-align: center;
+    border: none;
+    color: white!important;
+  }
+  
+  .form-group {
+    width: auto;
+    text-align: center;
+    align-items: center;
+  }
+  .form-group.submit-button {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    padding-top: 3rem;
+  }
+  .form-group.submit-button button {
+    width: 100%;
+  }
+  label {
+    margin-bottom: 0.5rem;
+    margin-top: 1.25rem;
+    margin-right: 0.8rem;
+    color: white;
+    font-weight: 500;
+    min-width: fit-content;
+    float: left;
+    text-shadow: 0px 1px 13px black;
+  }
