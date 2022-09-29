@@ -20751,7 +20751,10 @@ a {
 .bg-dark{
   background-image: url("img/container-logo.jpg");
   background-size: cover;
-  height:100vh;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 .swiper-shadow::before, .swiper-shadow::after{
 background: none;

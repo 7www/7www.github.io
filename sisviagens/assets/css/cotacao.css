@@ -3,10 +3,10 @@
         display: block;
     }
     form {
-        margin: auto;
-        padding-left: 1rem;
-        width: 100%;
-        padding-right: 1rem;
+      margin: auto;
+      padding-left: 0rem;
+      width: 85%;
+      padding-right: 0rem;
     }
   }
 @media (min-width: 992px){
@@ -14,18 +14,16 @@
         display: flex;
     }
     form {
-        margin: auto;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        width: 100%;
+      margin: auto;
+      padding-left: 0rem;
+      width: 85%;
+      padding-right: 0rem;
     }
   }
 
 
 .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
     width: 100%;
-    padding-right: 0;
-    padding-left: 0;
     margin-right: auto;
     margin-left: auto;
 }
@@ -70,7 +68,7 @@ select#ControlSelect1, #ControlSelect2, #ControlSelect3 {
     padding-top: 3rem;
   }
   .form-group.submit-button button {
-    width: 260px;
+    width: 100%;
   }
   label {
     margin-bottom: 0.5rem;
