@@ -31,11 +31,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link href="vendors/prism/prism.css" rel="stylesheet">
     <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet" />
     <link href="assets/css/user.css" rel="stylesheet" />
+    
     <!-- ===============================================-->
     <!-- Page Specific Stylesheet-->
     <!-- ===============================================-->
@@ -62,7 +64,7 @@
     position: fixed;
     width: 100%;
     height: 60px!important;
-    z-index: 1;">
+    z-index: 9;">
       <div class="swiper-container swiper-shadow swiper-theme"
           data-swiper='{"slidesPerView":1,"breakpoints":{"540":{"slidesPerView":2,"spaceBetween":10},"768":{"slidesPerView":3,"spaceBetween":20},"992":{"slidesPerView":4,"spaceBetween":30},"1024":{"slidesPerView":4,"spaceBetween":30},"1025":{"slidesPerView":4,"spaceBetween":30}},"spaceBetween":10,"grabCursor":true,"pagination":{"el":".swiper-pagination","clickable":true},"loop":true,"freeMode":true,"autoplay":{"delay":1500,"disableOnInteraction":false}}'>
         
@@ -86,9 +88,37 @@
           <div class="text-center">
             <h1 class="text-white fs-5 fs-xl-6">Por favor, pre-enche.</h1>
             <p class="text-white">É super facil. Quando tem tudo preenchido é só mande.</p>
-            <form>
+            <form onsubmit="sendquote()">
+              <script>
+                function sendquote() {
+                  let phonenumber = iti.getNumber();        
+                  let strFormControl0 = document.getElementById("FormControl0").value;
+                  let strFormControl1 = document.getElementById("FormControl1").value;
+                  let strFormControl2 = document.getElementById("FormControl2").value;
+                  let strFormControl3 = document.getElementById("FormControl3").value;
+                  let strFormControl4 = document.getElementById("FormControl4").value;
+                  let strFormControl5 = document.getElementById("FormControl5").value;
+                  let strFormControl6 = document.getElementById("FormControl6").value;
+                  let strFormControl7 = document.getElementById("FormControl7").value;
+                  let strFormControl8 = document.getElementById("FormControl8").value;
+                  let strFormControl9 = document.getElementById("FormControl9").value;
+                  let strFormControl10 = document.getElementById("FormControl10").value;
+                  let strFormControl11 = document.getElementById("FormControl11").value;
+                  
+                  let strURLdata = `${strFormControl0}%0A${encodeURIComponent(phonenumber)}%0A${strFormControl1}%0AAdultos: ${strFormControl2}%0ACrianças: ${strFormControl3}%0ABebês: ${strFormControl4}%0ASaindo: ${strFormControl5}%0AChegando: ${strFormControl6}%0AData da Saida: ${strFormControl7}%0AFlexivel: ${strFormControl8}%0AConexões: ${strFormControl9}%0AClasse: ${strFormControl10}%0ATem seguros: ${strFormControl11}`
+              
+                  window.open("https://wa.me/+351926057603?text="+strURLdata);
+                }
+              </script>
+              
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email</label>
+                <label for="FormControl0">Name</label>
+                <input type="text" class="form-control" id="FormControl0" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="phone">Celular</label>
+                <input id="phone" class="form-control" type="tel">
+                <label for="FormControl1">Email</label>
                 <input type="email" class="form-control" id="FormControl1" placeholder="name@example.com">
               </div>
               <div class="form-group col-md-3">
@@ -646,10 +676,10 @@
                 <label for="FormControl10">Classe</label>
                 <select class="form-control form-control-select" id="FormControl10">
                   <option value="Não tem preferencia" selected="selected">Não tem preferencia</option>
-                  <option value="Premium Economy">Economy</option>
-                  <option value="Premium Economy">Economy Premium</option>
-                  <option value="Premium Economy">Executiva</option>
-                  <option value="Premium Economy">Primeira</option>
+                  <option value="Economy">Economy</option>
+                  <option value="Economy Premium">Economy Premium</option>
+                  <option value="Executiva">Executiva</option>
+                  <option value="Primeira">Primeira</option>
                 </select>
               </div>
               <div class="form-group">
@@ -681,8 +711,12 @@
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
+    <script src="assets/js/countries-pt.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput-jquery.js"></script>
     <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
     <script src="vendors/bootstrap/bootstrap.min.js"></script>
     <script src="vendors/popper/popper.min.js"></script>
@@ -699,9 +733,32 @@
         altInput: "true",
         enableTime: "false",
         altFormat: "F j, Y",
-        dateFormat: "Y-m-d",
+        dateFormat: "F j, Y",
         locale: "pt"
       });
+    </script>
+    <script>
+    
+      let strlist = "";
+      //add items to the string then convert to json obj
+      for (let index = 0; index < countriesPT.length; index++) {
+        strlist = strlist + `"${countriesPT[index].flag}":"${countriesPT[index].namePt}",`
+      }
+      strlist = strlist.slice(0, -1); 
+      const myobj = JSON.parse('{'+strlist+'}')
+
+        // Set the input ID and select it
+        var input = document.querySelector("#phone");
+        // initialise plugin
+        var iti = window.intlTelInput(input, {
+          initialCountry: "BR",
+          localizedCountries: myobj,
+          nationalMode: true,
+          utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+        });
+
+            iti.getNumber();
+
     </script>
   </body>
 
