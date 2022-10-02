@@ -2,9 +2,12 @@
   .flatpickr-calendar.open, .flatpickr-calendar.inline {
     max-height: fit-content;
   }
-  
+  .flatpickr-innerContainer {
+    height: 90%;
+  }
   .flatpickr-calendar {
     width: calc(100% - 14px);
+    height: calc(100% - 74px);
     height: 100%;
     top: 0!important;
     bottom: 0!important;
