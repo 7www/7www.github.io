@@ -668,8 +668,6 @@
                 </select>
               </div>
               <div class="form-group col-md-2">
-                <label for="FormControl7">Data da Saida</label>
-                <input class="form-control form-control-datepicker" id="FormControl7" placeholder="📅 Escolhe uma data">
                 <label for="FormControl10">Classe</label>
                 <select class="form-control form-control-select" id="FormControl10">
                   <option value="Não tem preferencia" selected="selected">Não tem preferencia</option>
@@ -678,6 +676,8 @@
                   <option value="Executiva">Executiva</option>
                   <option value="Primeira">Primeira</option>
                 </select>
+                <label for="FormControl7">Data da Saida</label>
+                <input class="form-control form-control-datepicker" id="FormControl7" placeholder="📅 Escolhe uma data">
               </div>
               <div class="form-group col-md-1">
                 <label for="FormControl8">É flexivel?</label>
@@ -691,6 +691,13 @@
                 <select class="form-control form-control-select" id="FormControl9">
                   <option value="Sim" selected="selected">Sim</option>
                   <option value="Não">Não</option>
+                </select>
+              </div>
+              <div class="form-group col-md-1">
+                <label for="FormControl13">Tem malas?</label>
+                <select class="form-control form-control-select" id="FormControl13">
+                  <option value="Mão só" selected="selected">Mão só</option>
+                  <option value="Mão e porão">Mão e porão</option>
                 </select>
               </div>
               <div class="form-group col-md-1">
@@ -721,13 +728,13 @@
                 let strFormControl10 = document.getElementById("FormControl10").value;
                 let strFormControl11 = document.getElementById("FormControl11").value;
                 let strFormControl12 = document.getElementById("FormControl12").value;
+                let strFormControl13 = document.getElementById("FormControl13").value;
 
                 if (strFormControl12 != "") {
-                  strFormControl5 = strFormControl5+" | "+strFormControl12;  
-                  alert(strFormControl5);             
+                  strFormControl5 = strFormControl5+", "+strFormControl12;           
                 }
                 
-                let strURLdata = `${strFormControl0}%0A${encodeURIComponent(phonenumber)}%0A${strFormControl1}%0AAdultos: ${strFormControl2}%0ACrianças: ${strFormControl3}%0ABebês: ${strFormControl4}%0ASaindo: ${strFormControl5}%0AChegando: ${strFormControl6}%0AData da Saida: ${strFormControl7}%0AFlexivel: ${strFormControl8}%0AConexões: ${strFormControl9}%0AClasse: ${strFormControl10}%0ATem seguros: ${strFormControl11}`
+                let strURLdata = `${strFormControl0}%0A${encodeURIComponent(phonenumber)}%0A${strFormControl1}%0AAdultos: ${strFormControl2}%0ACrianças: ${strFormControl3}%0ABebês: ${strFormControl4}%0ASaindo: ${strFormControl5}%0AChegando: ${strFormControl6}%0AData da Saida: ${strFormControl7}%0AClasse: ${strFormControl10}%0AFlexivel: ${strFormControl8}%0AConexões: ${strFormControl9}%0AMalas: ${strFormControl13}%0ATem seguros: ${strFormControl11}`
 
                 window.open("https://wa.me/+351926057603?text="+strURLdata);
               }
