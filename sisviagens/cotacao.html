@@ -41,7 +41,8 @@
     <!-- ===============================================-->
     <!-- Page Specific Stylesheet-->
     <!-- ===============================================-->
-    <link href="assets/css/cotacao.css" rel="stylesheet" />    
+    <link href="assets/css/cotacao.css" rel="stylesheet" />   
+    
   </head>
 
   <div class="bg-dark" style="
@@ -88,29 +89,7 @@
           <div class="text-center">
             <h1 class="text-white fs-5 fs-xl-6">Por favor, preenche.</h1>
             <p class="text-white">É super facil. Quando tem tudo preenchido é só mande.</p>
-            <form onsubmit="sendquote()">
-              <script>
-                function sendquote() {
-                  let phonenumber = iti.getNumber();        
-                  let strFormControl0 = document.getElementById("FormControl0").value;
-                  let strFormControl1 = document.getElementById("FormControl1").value;
-                  let strFormControl2 = document.getElementById("FormControl2").value;
-                  let strFormControl3 = document.getElementById("FormControl3").value;
-                  let strFormControl4 = document.getElementById("FormControl4").value;
-                  let strFormControl5 = document.getElementById("FormControl5").value;
-                  let strFormControl6 = document.getElementById("FormControl6").value;
-                  let strFormControl7 = document.getElementById("FormControl7").value;
-                  let strFormControl8 = document.getElementById("FormControl8").value;
-                  let strFormControl9 = document.getElementById("FormControl9").value;
-                  let strFormControl10 = document.getElementById("FormControl10").value;
-                  let strFormControl11 = document.getElementById("FormControl11").value;
-                  
-                  let strURLdata = `${strFormControl0}%0A${encodeURIComponent(phonenumber)}%0A${strFormControl1}%0AAdultos: ${strFormControl2}%0ACrianças: ${strFormControl3}%0ABebês: ${strFormControl4}%0ASaindo: ${strFormControl5}%0AChegando: ${strFormControl6}%0AData da Saida: ${strFormControl7}%0AFlexivel: ${strFormControl8}%0AConexões: ${strFormControl9}%0AClasse: ${strFormControl10}%0ATem seguros: ${strFormControl11}`
-              
-                  window.open("https://wa.me/+351926057603?text="+strURLdata);
-                }
-              </script>
-              
+            <form onsubmit="sendquote()">             
               <div class="form-group">
                 <label for="FormControl0">Name</label>
                 <input type="text" class="form-control" id="FormControl0" placeholder="">
@@ -152,7 +131,7 @@
               </div>
               <div class="form-group col-md-2">
                 <label for="FormControl5">Saindo</label>
-                <select class="form-control form-control-select" id="FormControl5">
+                <select onchange="getstates()" class="form-control form-control-select" id="FormControl5">
                   <option value="Brasil" selected="selected">Brasil</option>
                   <option value="Afeganistão">Afeganistão</option>
                   <option value="África do Sul">África do Sul</option>
@@ -403,6 +382,36 @@
                   <option value="Wallis e Futuna">Wallis e Futuna</option>
                   <option value="Zimbabwe">Zimbabwe</option>
                   <option value="Zâmbia">Zâmbia</option>
+                </select>
+                <label style="display: none;" for="FormControl12" id="FormControl12_label">Estado</label>
+                <select style="display: none;" class="form-control form-control-select" id="FormControl12">
+                  <option value="Acre">Acre</option>
+                  <option value="Alagoas">Alagoas</option>
+                  <option value="Amapá">Amapá</option>
+                  <option value="Amazonas">Amazonas</option>
+                  <option value="Bahia">Bahia</option>
+                  <option value="Ceará">Ceará</option>
+                  <option value="Distrito Federal">Distrito</option>
+                  <option value="Espirito Santo">Espirito</option>
+                  <option value="Goiás">Goiás</option>
+                  <option value="Maranhão">Maranhão</option>
+                  <option value="Mato Grosso">Mato Grosso</option>
+                  <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                  <option value="Minas Gerais">Minas Gerais</option>
+                  <option value="Pará">Pará</option>
+                  <option value="Paraíba">Paraíba</option>
+                  <option value="Paraná">Paraná</option>
+                  <option value="Pernambuco">Pernambuco</option>
+                  <option value="Piauí">Piauí</option>
+                  <option value="Rio de Janeiro">Rio de Janeiro</option>
+                  <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                  <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                  <option value="Rondônia">Rondônia</option>
+                  <option value="Roraima">Roraima</option>
+                  <option value="Santa Catarina">Santa Catarina</option>
+                  <option value="São Paulo">São Paulo</option>
+                  <option value="Sergipe">Sergipe</option>
+                  <option value="Tocantins">Tocantins</option>
                 </select>
                 <label for="FormControl6">Chegando</label>
                 <select class="form-control form-control-select" id="FormControl6">
@@ -661,18 +670,6 @@
               <div class="form-group col-md-2">
                 <label for="FormControl7">Data da Saida</label>
                 <input class="form-control form-control-datepicker" id="FormControl7" placeholder="📅 Escolhe uma data">
-                <label for="FormControl8">É flexivel?</label>
-                <select class="form-control form-control-select" id="FormControl8">
-                  <option value="Sim" selected="selected">Sim</option>
-                  <option value="Não">Não</option>
-                </select>
-              </div>
-              <div class="form-group col-md-2">
-                <label for="FormControl9">Pode ter conexões?</label>
-                <select class="form-control form-control-select" id="FormControl9">
-                  <option value="Sim" selected="selected">Sim</option>
-                  <option value="Não">Não</option>
-                </select>
                 <label for="FormControl10">Classe</label>
                 <select class="form-control form-control-select" id="FormControl10">
                   <option value="Não tem preferencia" selected="selected">Não tem preferencia</option>
@@ -682,17 +679,74 @@
                   <option value="Primeira">Primeira</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="form-group col-md-1">
+                <label for="FormControl8">É flexivel?</label>
+                <select class="form-control form-control-select" id="FormControl8">
+                  <option value="Sim" selected="selected">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </div>
+              <div class="form-group col-md-1">
+                <label for="FormControl9">Pode ter conexões?</label>
+                <select class="form-control form-control-select" id="FormControl9">
+                  <option value="Sim" selected="selected">Sim</option>
+                  <option value="Não">Não</option>
+                </select>
+              </div>
+              <div class="form-group col-md-1">
                 <label for="FormControl11">Tem seguros de viagens?</label>
                 <select class="form-control form-control-select" id="FormControl11">
                   <option value="Não" selected="selected">Não</option>
                   <option value="Sim">Sim</option>
                 </select>
               </div>
+
               <div class="form-group submit-button">
-                <button type="submit" class="btn btn-primary btn-light">✉ Pronto. Mande ja</button>
+                <button type="submit" class="btn btn-primary btn-light">✔️ Pronto. Mande ja</button>
               </div>
             </form>
+            <script>
+              function sendquote() {
+                let phonenumber = iti.getNumber();        
+                let strFormControl0 = document.getElementById("FormControl0").value;
+                let strFormControl1 = document.getElementById("FormControl1").value;
+                let strFormControl2 = document.getElementById("FormControl2").value;
+                let strFormControl3 = document.getElementById("FormControl3").value;
+                let strFormControl4 = document.getElementById("FormControl4").value;
+                let strFormControl5 = document.getElementById("FormControl5").value;
+                let strFormControl6 = document.getElementById("FormControl6").value;
+                let strFormControl7 = document.getElementById("FormControl7").value;
+                let strFormControl8 = document.getElementById("FormControl8").value;
+                let strFormControl9 = document.getElementById("FormControl9").value;
+                let strFormControl10 = document.getElementById("FormControl10").value;
+                let strFormControl11 = document.getElementById("FormControl11").value;
+                let strFormControl12 = document.getElementById("FormControl12").value;
+
+                if (strFormControl12 != "") {
+                  strFormControl5 = strFormControl5+" | "+strFormControl12;  
+                  alert(strFormControl5);             
+                }
+                
+                let strURLdata = `${strFormControl0}%0A${encodeURIComponent(phonenumber)}%0A${strFormControl1}%0AAdultos: ${strFormControl2}%0ACrianças: ${strFormControl3}%0ABebês: ${strFormControl4}%0ASaindo: ${strFormControl5}%0AChegando: ${strFormControl6}%0AData da Saida: ${strFormControl7}%0AFlexivel: ${strFormControl8}%0AConexões: ${strFormControl9}%0AClasse: ${strFormControl10}%0ATem seguros: ${strFormControl11}`
+
+                window.open("https://wa.me/+351926057603?text="+strURLdata);
+              }
+            </script>
+            <script>
+              function getstates() {
+                let country = document.getElementById("FormControl5").value;
+                console.log(country);
+                if (country == "Brasil") {
+                  document.getElementById("FormControl12").style.display = "inline-block";
+                  document.getElementById("FormControl12_label").style.display = "inline-block";
+                }
+                else {
+                  document.getElementById("FormControl12").style.display = "none";
+                  document.getElementById("FormControl12_label").style.display = "none";
+                }
+              }
+              getstates()
+          </script>
           </div>
         </div>
         <!-- end of .container-->
@@ -758,7 +812,7 @@
           utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
         });
 
-            iti.getNumber();
+      iti.getNumber();
 
     </script>
   </body>
